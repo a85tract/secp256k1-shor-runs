@@ -1,0 +1,199 @@
+Lemma G constants at n = 256 (pmc_lead_n7s288_cap_P131072_s271.json + pmc_lead_n7s288_cap_P131072_s272.json + pmc_lead_n7s288_cap_P131072_s273.json (393216 paths of J = 15, 5898240 per-addition lanes)): per path UB E[N_DO + 2 N_P] 0.04289 (observed per addition: f_DO 0.00226, f_P 0.000225), UB E[corr] 0.001596, UB recovered 1.76e-05, UB class (iii) 1.76e-05, LB phi 0.03257; alpha 0.005; aborts counted at a stream cap of 726000 of 761147 CCX
+Lemma G constants at n = 16 (pmc_n7toy16_cap_P65536_s51.json (65536 paths of J = 3, 196608 per-addition lanes)): per path UB E[N_DO + 2 N_P] 0.01037 (observed per addition: f_DO 0.00225, f_P 0.000234), UB E[corr] 0.0008666, UB recovered 0.000105, UB class (iii) 0.000105, LB phi 0.005799; alpha 0.005; aborts counted at a stream cap of 726000 of 761147 CCX
+Lemma G constants at n = 24 (pmc_n7toy24_cap_P65536_s52.json (65536 paths of J = 4, 262144 per-addition lanes)): per path UB E[N_DO + 2 N_P] 0.01376 (observed per addition: f_DO 0.00224, f_P 0.000256), UB E[corr] 0.001194, UB recovered 0.000105, UB class (iii) 0.000105, LB phi 0.007791; alpha 0.005; aborts counted at a stream cap of 726000 of 761147 CCX
+Lemma G constants at n = 32 (pmc_n7toy32_cap_P65536_s53.json (65536 paths of J = 5, 327680 per-addition lanes)): per path UB E[N_DO + 2 N_P] 0.01637 (observed per addition: f_DO 0.00228, f_P 0.000183), UB E[corr] 0.001427, UB recovered 0.000105, UB class (iii) 0.000105, LB phi 0.0101; alpha 0.005; aborts counted at a stream cap of 726000 of 761147 CCX
+Lemma G constants at n = 64 (pmc_n7toy64_cap_P65536_s54.json (65536 paths of J = 7, 458752 per-addition lanes)): per path UB E[N_DO + 2 N_P] 0.02292 (observed per addition: f_DO 0.00221, f_P 0.00024), UB E[corr] 0.002143, UB recovered 0.000105, UB class (iii) 0.000105, LB phi 0.01389; alpha 0.005; aborts counted at a stream cap of 726000 of 761147 CCX
+Lemma G constants at n = 128 (pmc_n7toy128_cap_P65536_s55.json (65536 paths of J = 9, 589824 per-addition lanes)): per path UB E[N_DO + 2 N_P] 0.02924 (observed per addition: f_DO 0.00221, f_P 0.000237), UB E[corr] 0.002926, UB recovered 0.000105, UB class (iii) 0.000105, LB phi 0.01803; alpha 0.005; aborts counted at a stream cap of 726000 of 761147 CCX
+candidate h1/candidates/stack_n7_l9.py RUNS=110
+source scan: clean
+hex runs: priced per kind (m2, m3, m6, m7, n2, n3, n6, n7, term, w1, w2, w3, w4, w8); runs under Lemma G (offset(global_scalar=True) with --global-mc) keep outcomes by its rule, counted per size below
+arithmetic model of runs without hex kinds: approximate, HEURISTIC independent-garbage-run model (failure 0.0012 per addition, 4 pf per run; the circuit has no flags); additions priced estimate
+    n trials  success      95% interval   runs    lg ops lg opsmax  s/trial  per-run shape
+  [n = 16] 10 / 200 trials, 10 ok, 0 failed (last failure: trial -1 ), 11 bad runs, 0 s
+  [n = 16] 20 / 200 trials, 20 ok, 0 failed (last failure: trial -1 ), 19 bad runs, 0 s
+  [n = 16] 30 / 200 trials, 30 ok, 0 failed (last failure: trial -1 ), 25 bad runs, 0 s
+  [n = 16] 40 / 200 trials, 40 ok, 0 failed (last failure: trial -1 ), 35 bad runs, 1 s
+  [n = 16] 50 / 200 trials, 50 ok, 0 failed (last failure: trial -1 ), 46 bad runs, 1 s
+  [n = 16] 60 / 200 trials, 60 ok, 0 failed (last failure: trial -1 ), 57 bad runs, 1 s
+  [n = 16] 70 / 200 trials, 70 ok, 0 failed (last failure: trial -1 ), 65 bad runs, 1 s
+  [n = 16] 80 / 200 trials, 80 ok, 0 failed (last failure: trial -1 ), 74 bad runs, 1 s
+  [n = 16] 90 / 200 trials, 90 ok, 0 failed (last failure: trial -1 ), 90 bad runs, 1 s
+  [n = 16] 100 / 200 trials, 100 ok, 0 failed (last failure: trial -1 ), 102 bad runs, 2 s
+  [n = 16] 110 / 200 trials, 110 ok, 0 failed (last failure: trial -1 ), 112 bad runs, 2 s
+  [n = 16] 120 / 200 trials, 120 ok, 0 failed (last failure: trial -1 ), 122 bad runs, 2 s
+  [n = 16] 130 / 200 trials, 130 ok, 0 failed (last failure: trial -1 ), 129 bad runs, 2 s
+  [n = 16] 140 / 200 trials, 140 ok, 0 failed (last failure: trial -1 ), 134 bad runs, 2 s
+  [n = 16] 150 / 200 trials, 150 ok, 0 failed (last failure: trial -1 ), 144 bad runs, 2 s
+  [n = 16] 160 / 200 trials, 160 ok, 0 failed (last failure: trial -1 ), 158 bad runs, 2 s
+  [n = 16] 170 / 200 trials, 170 ok, 0 failed (last failure: trial -1 ), 165 bad runs, 3 s
+  [n = 16] 180 / 200 trials, 180 ok, 0 failed (last failure: trial -1 ), 170 bad runs, 3 s
+  [n = 16] 190 / 200 trials, 190 ok, 0 failed (last failure: trial -1 ), 174 bad runs, 3 s
+  [n = 16] 200 / 200 trials, 200 ok, 0 failed (last failure: trial -1 ), 183 bad runs, 3 s
+   16    200   1.0000   [0.9812, 1.0000]  16.00     21.52     25.48    0.015  bits 6+20 -> 3 add.
+      decoding attempts: largest executed attempt 7166 units (2^12.81); 0 attempts stopped at their cap
+      183 runs returned garbage (approximate-arithmetic model)
+      3200 runs under Lemma G's keep rule (paper Sec. V.D and App. B; --global-mc pmc_n7toy16_cap_P65536_s51.json (65536 paths of J = 3, 196608 per-addition lanes)), visibly flagged runs counted as garbage
+  [n = 24] 10 / 200 trials, 10 ok, 0 failed (last failure: trial -1 ), 17 bad runs, 0 s
+  [n = 24] 20 / 200 trials, 20 ok, 0 failed (last failure: trial -1 ), 32 bad runs, 0 s
+  [n = 24] 30 / 200 trials, 30 ok, 0 failed (last failure: trial -1 ), 38 bad runs, 1 s
+  [n = 24] 40 / 200 trials, 40 ok, 0 failed (last failure: trial -1 ), 51 bad runs, 1 s
+  [n = 24] 50 / 200 trials, 50 ok, 0 failed (last failure: trial -1 ), 73 bad runs, 1 s
+  [n = 24] 60 / 200 trials, 60 ok, 0 failed (last failure: trial -1 ), 84 bad runs, 1 s
+  [n = 24] 70 / 200 trials, 70 ok, 0 failed (last failure: trial -1 ), 92 bad runs, 2 s
+  [n = 24] 80 / 200 trials, 80 ok, 0 failed (last failure: trial -1 ), 101 bad runs, 2 s
+  [n = 24] 90 / 200 trials, 90 ok, 0 failed (last failure: trial -1 ), 120 bad runs, 2 s
+  [n = 24] 100 / 200 trials, 100 ok, 0 failed (last failure: trial -1 ), 133 bad runs, 2 s
+  [n = 24] 110 / 200 trials, 110 ok, 0 failed (last failure: trial -1 ), 145 bad runs, 3 s
+  [n = 24] 120 / 200 trials, 120 ok, 0 failed (last failure: trial -1 ), 157 bad runs, 3 s
+  [n = 24] 130 / 200 trials, 130 ok, 0 failed (last failure: trial -1 ), 175 bad runs, 3 s
+  [n = 24] 140 / 200 trials, 140 ok, 0 failed (last failure: trial -1 ), 192 bad runs, 4 s
+  [n = 24] 150 / 200 trials, 150 ok, 0 failed (last failure: trial -1 ), 206 bad runs, 4 s
+  [n = 24] 160 / 200 trials, 160 ok, 0 failed (last failure: trial -1 ), 219 bad runs, 4 s
+  [n = 24] 170 / 200 trials, 170 ok, 0 failed (last failure: trial -1 ), 229 bad runs, 4 s
+  [n = 24] 180 / 200 trials, 180 ok, 0 failed (last failure: trial -1 ), 243 bad runs, 5 s
+  [n = 24] 190 / 200 trials, 190 ok, 0 failed (last failure: trial -1 ), 258 bad runs, 5 s
+  [n = 24] 200 / 200 trials, 200 ok, 0 failed (last failure: trial -1 ), 268 bad runs, 5 s
+   24    200   1.0000   [0.9812, 1.0000]  18.00     24.21     30.42    0.025  bits 6+29 -> 4 add.
+      decoding attempts: largest executed attempt 2.507e+04 units (2^14.61); 0 attempts stopped at their cap
+      268 runs returned garbage (approximate-arithmetic model)
+      3600 runs under Lemma G's keep rule (paper Sec. V.D and App. B; --global-mc pmc_n7toy24_cap_P65536_s52.json (65536 paths of J = 4, 262144 per-addition lanes)), visibly flagged runs counted as garbage
+  [n = 32] 10 / 200 trials, 10 ok, 0 failed (last failure: trial -1 ), 12 bad runs, 0 s
+  [n = 32] 20 / 200 trials, 20 ok, 0 failed (last failure: trial -1 ), 22 bad runs, 1 s
+  [n = 32] 30 / 200 trials, 30 ok, 0 failed (last failure: trial -1 ), 33 bad runs, 1 s
+  [n = 32] 40 / 200 trials, 40 ok, 0 failed (last failure: trial -1 ), 47 bad runs, 1 s
+  [n = 32] 50 / 200 trials, 50 ok, 0 failed (last failure: trial -1 ), 56 bad runs, 2 s
+  [n = 32] 60 / 200 trials, 60 ok, 0 failed (last failure: trial -1 ), 64 bad runs, 2 s
+  [n = 32] 70 / 200 trials, 70 ok, 0 failed (last failure: trial -1 ), 80 bad runs, 2 s
+  [n = 32] 80 / 200 trials, 80 ok, 0 failed (last failure: trial -1 ), 91 bad runs, 2 s
+  [n = 32] 90 / 200 trials, 90 ok, 0 failed (last failure: trial -1 ), 102 bad runs, 3 s
+  [n = 32] 100 / 200 trials, 100 ok, 0 failed (last failure: trial -1 ), 109 bad runs, 3 s
+  [n = 32] 110 / 200 trials, 110 ok, 0 failed (last failure: trial -1 ), 117 bad runs, 3 s
+  [n = 32] 120 / 200 trials, 120 ok, 0 failed (last failure: trial -1 ), 134 bad runs, 4 s
+  [n = 32] 130 / 200 trials, 130 ok, 0 failed (last failure: trial -1 ), 147 bad runs, 4 s
+  [n = 32] 140 / 200 trials, 140 ok, 0 failed (last failure: trial -1 ), 155 bad runs, 4 s
+  [n = 32] 150 / 200 trials, 150 ok, 0 failed (last failure: trial -1 ), 169 bad runs, 5 s
+  [n = 32] 160 / 200 trials, 160 ok, 0 failed (last failure: trial -1 ), 174 bad runs, 5 s
+  [n = 32] 170 / 200 trials, 170 ok, 0 failed (last failure: trial -1 ), 190 bad runs, 5 s
+  [n = 32] 180 / 200 trials, 180 ok, 0 failed (last failure: trial -1 ), 202 bad runs, 6 s
+  [n = 32] 190 / 200 trials, 190 ok, 0 failed (last failure: trial -1 ), 214 bad runs, 6 s
+  [n = 32] 200 / 200 trials, 200 ok, 0 failed (last failure: trial -1 ), 225 bad runs, 6 s
+   32    200   1.0000   [0.9812, 1.0000]  20.00     23.62     28.95    0.032  bits 6+36 -> 5 add.
+      decoding attempts: largest executed attempt 6.27e+04 units (2^15.94); 0 attempts stopped at their cap
+      225 runs returned garbage (approximate-arithmetic model)
+      4000 runs under Lemma G's keep rule (paper Sec. V.D and App. B; --global-mc pmc_n7toy32_cap_P65536_s53.json (65536 paths of J = 5, 327680 per-addition lanes)), visibly flagged runs counted as garbage
+  [n = 64] 10 / 200 trials, 10 ok, 0 failed (last failure: trial -1 ), 11 bad runs, 1 s
+  [n = 64] 20 / 200 trials, 20 ok, 0 failed (last failure: trial -1 ), 25 bad runs, 1 s
+  [n = 64] 30 / 200 trials, 30 ok, 0 failed (last failure: trial -1 ), 40 bad runs, 2 s
+  [n = 64] 40 / 200 trials, 40 ok, 0 failed (last failure: trial -1 ), 55 bad runs, 2 s
+  [n = 64] 50 / 200 trials, 50 ok, 0 failed (last failure: trial -1 ), 81 bad runs, 3 s
+  [n = 64] 60 / 200 trials, 60 ok, 0 failed (last failure: trial -1 ), 96 bad runs, 4 s
+  [n = 64] 70 / 200 trials, 70 ok, 0 failed (last failure: trial -1 ), 110 bad runs, 4 s
+  [n = 64] 80 / 200 trials, 80 ok, 0 failed (last failure: trial -1 ), 128 bad runs, 5 s
+  [n = 64] 90 / 200 trials, 90 ok, 0 failed (last failure: trial -1 ), 143 bad runs, 6 s
+  [n = 64] 100 / 200 trials, 100 ok, 0 failed (last failure: trial -1 ), 155 bad runs, 6 s
+  [n = 64] 110 / 200 trials, 110 ok, 0 failed (last failure: trial -1 ), 166 bad runs, 7 s
+  [n = 64] 120 / 200 trials, 120 ok, 0 failed (last failure: trial -1 ), 174 bad runs, 8 s
+  [n = 64] 130 / 200 trials, 130 ok, 0 failed (last failure: trial -1 ), 192 bad runs, 9 s
+  [n = 64] 140 / 200 trials, 140 ok, 0 failed (last failure: trial -1 ), 207 bad runs, 9 s
+  [n = 64] 150 / 200 trials, 150 ok, 0 failed (last failure: trial -1 ), 220 bad runs, 10 s
+  [n = 64] 160 / 200 trials, 160 ok, 0 failed (last failure: trial -1 ), 235 bad runs, 10 s
+  [n = 64] 170 / 200 trials, 170 ok, 0 failed (last failure: trial -1 ), 249 bad runs, 11 s
+  [n = 64] 180 / 200 trials, 180 ok, 0 failed (last failure: trial -1 ), 261 bad runs, 12 s
+  [n = 64] 190 / 200 trials, 190 ok, 0 failed (last failure: trial -1 ), 273 bad runs, 12 s
+  [n = 64] 200 / 200 trials, 200 ok, 0 failed (last failure: trial -1 ), 287 bad runs, 13 s
+   64    200   1.0000   [0.9812, 1.0000]  23.00     24.72     29.13    0.064  bits 8+70 -> 7 add.
+      decoding attempts: largest executed attempt 2.833e+05 units (2^18.11); 0 attempts stopped at their cap
+      287 runs returned garbage (approximate-arithmetic model)
+      4600 runs under Lemma G's keep rule (paper Sec. V.D and App. B; --global-mc pmc_n7toy64_cap_P65536_s54.json (65536 paths of J = 7, 458752 per-addition lanes)), visibly flagged runs counted as garbage
+  [n = 128] 10 / 200 trials, 10 ok, 0 failed (last failure: trial -1 ), 18 bad runs, 6 s
+  [n = 128] 20 / 200 trials, 20 ok, 0 failed (last failure: trial -1 ), 34 bad runs, 13 s
+  [n = 128] 30 / 200 trials, 30 ok, 0 failed (last failure: trial -1 ), 52 bad runs, 18 s
+  [n = 128] 40 / 200 trials, 40 ok, 0 failed (last failure: trial -1 ), 64 bad runs, 23 s
+  [n = 128] 50 / 200 trials, 50 ok, 0 failed (last failure: trial -1 ), 91 bad runs, 29 s
+  [n = 128] 60 / 200 trials, 60 ok, 0 failed (last failure: trial -1 ), 114 bad runs, 34 s
+  [n = 128] 70 / 200 trials, 70 ok, 0 failed (last failure: trial -1 ), 139 bad runs, 40 s
+  [n = 128] 80 / 200 trials, 80 ok, 0 failed (last failure: trial -1 ), 162 bad runs, 46 s
+  [n = 128] 90 / 200 trials, 90 ok, 0 failed (last failure: trial -1 ), 185 bad runs, 51 s
+  [n = 128] 100 / 200 trials, 100 ok, 0 failed (last failure: trial -1 ), 211 bad runs, 56 s
+  [n = 128] 110 / 200 trials, 110 ok, 0 failed (last failure: trial -1 ), 232 bad runs, 61 s
+  [n = 128] 120 / 200 trials, 120 ok, 0 failed (last failure: trial -1 ), 260 bad runs, 68 s
+  [n = 128] 130 / 200 trials, 130 ok, 0 failed (last failure: trial -1 ), 283 bad runs, 73 s
+  [n = 128] 140 / 200 trials, 140 ok, 0 failed (last failure: trial -1 ), 307 bad runs, 78 s
+  [n = 128] 150 / 200 trials, 150 ok, 0 failed (last failure: trial -1 ), 331 bad runs, 84 s
+  [n = 128] 160 / 200 trials, 160 ok, 0 failed (last failure: trial -1 ), 353 bad runs, 89 s
+  [n = 128] 170 / 200 trials, 170 ok, 0 failed (last failure: trial -1 ), 379 bad runs, 94 s
+  [n = 128] 180 / 200 trials, 180 ok, 0 failed (last failure: trial -1 ), 401 bad runs, 99 s
+  [n = 128] 190 / 200 trials, 190 ok, 0 failed (last failure: trial -1 ), 426 bad runs, 104 s
+  [n = 128] 200 / 200 trials, 200 ok, 0 failed (last failure: trial -1 ), 444 bad runs, 109 s
+  128    200   1.0000   [0.9812, 1.0000]  28.00     29.33     34.40    0.543  bits 10+134 -> 9 add.
+      decoding attempts: largest executed attempt 3.442e+06 units (2^21.71); 0 attempts stopped at their cap
+      444 runs returned garbage (approximate-arithmetic model)
+      5600 runs under Lemma G's keep rule (paper Sec. V.D and App. B; --global-mc pmc_n7toy128_cap_P65536_s55.json (65536 paths of J = 9, 589824 per-addition lanes)), visibly flagged runs counted as garbage
+  [n = 256] 10 / 563 trials, 10 ok, 0 failed (last failure: trial -1 ), 96 bad runs, 124 s
+  [n = 256] 20 / 563 trials, 20 ok, 0 failed (last failure: trial -1 ), 197 bad runs, 238 s
+  [n = 256] 30 / 563 trials, 30 ok, 0 failed (last failure: trial -1 ), 293 bad runs, 350 s
+  [n = 256] 40 / 563 trials, 40 ok, 0 failed (last failure: trial -1 ), 393 bad runs, 488 s
+  [n = 256] 50 / 563 trials, 50 ok, 0 failed (last failure: trial -1 ), 492 bad runs, 612 s
+  [n = 256] 60 / 563 trials, 60 ok, 0 failed (last failure: trial -1 ), 592 bad runs, 756 s
+  [n = 256] 70 / 563 trials, 70 ok, 0 failed (last failure: trial -1 ), 685 bad runs, 910 s
+  [n = 256] 80 / 563 trials, 80 ok, 0 failed (last failure: trial -1 ), 787 bad runs, 1041 s
+  [n = 256] 90 / 563 trials, 90 ok, 0 failed (last failure: trial -1 ), 876 bad runs, 1213 s
+  [n = 256] 100 / 563 trials, 100 ok, 0 failed (last failure: trial -1 ), 986 bad runs, 1382 s
+  [n = 256] 110 / 563 trials, 110 ok, 0 failed (last failure: trial -1 ), 1097 bad runs, 1527 s
+  [n = 256] 120 / 563 trials, 120 ok, 0 failed (last failure: trial -1 ), 1221 bad runs, 1725 s
+  [n = 256] 130 / 563 trials, 130 ok, 0 failed (last failure: trial -1 ), 1332 bad runs, 1872 s
+  [n = 256] 140 / 563 trials, 140 ok, 0 failed (last failure: trial -1 ), 1454 bad runs, 1997 s
+  [n = 256] 150 / 563 trials, 150 ok, 0 failed (last failure: trial -1 ), 1580 bad runs, 2182 s
+  [n = 256] 160 / 563 trials, 160 ok, 0 failed (last failure: trial -1 ), 1680 bad runs, 2327 s
+  [n = 256] 170 / 563 trials, 170 ok, 0 failed (last failure: trial -1 ), 1773 bad runs, 2422 s
+  [n = 256] 180 / 563 trials, 180 ok, 0 failed (last failure: trial -1 ), 1876 bad runs, 2543 s
+  [n = 256] 190 / 563 trials, 190 ok, 0 failed (last failure: trial -1 ), 2006 bad runs, 2630 s
+  [n = 256] 200 / 563 trials, 200 ok, 0 failed (last failure: trial -1 ), 2137 bad runs, 2710 s
+  [n = 256] 210 / 563 trials, 210 ok, 0 failed (last failure: trial -1 ), 2249 bad runs, 2788 s
+  [n = 256] 220 / 563 trials, 220 ok, 0 failed (last failure: trial -1 ), 2349 bad runs, 2874 s
+  [n = 256] 230 / 563 trials, 230 ok, 0 failed (last failure: trial -1 ), 2438 bad runs, 2983 s
+  [n = 256] 240 / 563 trials, 240 ok, 0 failed (last failure: trial -1 ), 2545 bad runs, 3075 s
+  [n = 256] 250 / 563 trials, 250 ok, 0 failed (last failure: trial -1 ), 2657 bad runs, 3156 s
+  [n = 256] 260 / 563 trials, 260 ok, 0 failed (last failure: trial -1 ), 2760 bad runs, 3238 s
+  [n = 256] 270 / 563 trials, 270 ok, 0 failed (last failure: trial -1 ), 2859 bad runs, 3338 s
+  [n = 256] 280 / 563 trials, 280 ok, 0 failed (last failure: trial -1 ), 2962 bad runs, 3440 s
+  [n = 256] 290 / 563 trials, 290 ok, 0 failed (last failure: trial -1 ), 3071 bad runs, 3550 s
+  [n = 256] 300 / 563 trials, 300 ok, 0 failed (last failure: trial -1 ), 3181 bad runs, 3628 s
+  [n = 256] 310 / 563 trials, 310 ok, 0 failed (last failure: trial -1 ), 3292 bad runs, 3716 s
+  [n = 256] 320 / 563 trials, 320 ok, 0 failed (last failure: trial -1 ), 3408 bad runs, 3824 s
+  [n = 256] 330 / 563 trials, 330 ok, 0 failed (last failure: trial -1 ), 3506 bad runs, 3910 s
+  [n = 256] 340 / 563 trials, 340 ok, 0 failed (last failure: trial -1 ), 3612 bad runs, 3992 s
+  [n = 256] 350 / 563 trials, 350 ok, 0 failed (last failure: trial -1 ), 3730 bad runs, 4102 s
+  [n = 256] 360 / 563 trials, 360 ok, 0 failed (last failure: trial -1 ), 3833 bad runs, 4185 s
+  [n = 256] 370 / 563 trials, 370 ok, 0 failed (last failure: trial -1 ), 3951 bad runs, 4284 s
+  [n = 256] 380 / 563 trials, 380 ok, 0 failed (last failure: trial -1 ), 4062 bad runs, 4372 s
+  [n = 256] 390 / 563 trials, 390 ok, 0 failed (last failure: trial -1 ), 4161 bad runs, 4478 s
+  [n = 256] 400 / 563 trials, 400 ok, 0 failed (last failure: trial -1 ), 4274 bad runs, 4583 s
+  [n = 256] 410 / 563 trials, 410 ok, 0 failed (last failure: trial -1 ), 4396 bad runs, 4703 s
+  [n = 256] 420 / 563 trials, 420 ok, 0 failed (last failure: trial -1 ), 4530 bad runs, 4804 s
+  [n = 256] 430 / 563 trials, 430 ok, 0 failed (last failure: trial -1 ), 4660 bad runs, 4893 s
+  [n = 256] 440 / 563 trials, 440 ok, 0 failed (last failure: trial -1 ), 4764 bad runs, 4979 s
+  [n = 256] 450 / 563 trials, 450 ok, 0 failed (last failure: trial -1 ), 4884 bad runs, 5165 s
+  [n = 256] 460 / 563 trials, 460 ok, 0 failed (last failure: trial -1 ), 4989 bad runs, 5375 s
+  [n = 256] 470 / 563 trials, 470 ok, 0 failed (last failure: trial -1 ), 5092 bad runs, 5512 s
+  [n = 256] 480 / 563 trials, 480 ok, 0 failed (last failure: trial -1 ), 5185 bad runs, 5650 s
+  [n = 256] 490 / 563 trials, 490 ok, 0 failed (last failure: trial -1 ), 5298 bad runs, 5789 s
+  [n = 256] 500 / 563 trials, 500 ok, 0 failed (last failure: trial -1 ), 5412 bad runs, 5902 s
+  [n = 256] 510 / 563 trials, 510 ok, 0 failed (last failure: trial -1 ), 5530 bad runs, 5994 s
+  [n = 256] 520 / 563 trials, 520 ok, 0 failed (last failure: trial -1 ), 5629 bad runs, 6077 s
+  [n = 256] 530 / 563 trials, 530 ok, 0 failed (last failure: trial -1 ), 5725 bad runs, 6170 s
+  [n = 256] 540 / 563 trials, 540 ok, 0 failed (last failure: trial -1 ), 5834 bad runs, 6268 s
+  [n = 256] 550 / 563 trials, 550 ok, 0 failed (last failure: trial -1 ), 5920 bad runs, 6361 s
+  [n = 256] 560 / 563 trials, 560 ok, 0 failed (last failure: trial -1 ), 6012 bad runs, 6447 s
+  256    563   1.0000   [0.9932, 1.0000] 110.00     33.35     39.85   11.477  bits 9+261 -> 15 add.
+      success >= 0.994507: exact one-sided bound at alpha = 0.045; with the Monte Carlo bound (alpha = 0.005) the joint confidence is >= 0.95 (union bound); the verdict needs this bound and the Wilson bound >= 0.99
+      decoding attempts: largest executed attempt 1.259e+08 units (2^26.91); 0 attempts stopped at their cap
+      6046 runs returned garbage (approximate-arithmetic model)
+      61930 runs under Lemma G's keep rule (paper Sec. V.D and App. B; --global-mc pmc_lead_n7s288_cap_P131072_s271.json + pmc_lead_n7s288_cap_P131072_s272.json + pmc_lead_n7s288_cap_P131072_s273.json (393216 paths of J = 15, 5898240 per-addition lanes)), visibly flagged runs counted as garbage
+cost at n = 256 (hex run, grade by part: 10 x m7: measured (n7lead_m7_peak_cap_n256.json; abort cap 812589 executed Toffoli charged (847736 emitted, 0 of 1024 random-outcome lanes over it); + 630 declared Toffoli outside the checked circuit (o1 norm-7 correction-phase digit register (o1/n7digit.py, 2 - w): harness/vb.py o1/s5/n7digit_check.py --n 7 -p BAR=True -p MODE=identity 902 - conversion 272 (o1/s5/n7conv_check.py); o1/results/s5/n7digit_w7_identity.txt, h1/n7/n7conv_digit_w7.txt)); 1 x n7: measured (n7lead_n7_peak_cap_n256.json; abort cap 812589 executed Toffoli charged (847736 emitted, 0 of 1024 random-outcome lanes over it); + 632 declared Toffoli outside the checked circuit (o1 norm-7 correction-phase digit register (o1/n7digit.py, 3 + w): harness/vb.py o1/s5/n7digit_check.py --n 7 -p BAR=False -p MODE=identity 904 - conversion 272 (o1/s5/n7conv_check.py); o1/results/s5/n7digit_w7_identity.txt, h1/n7/n7conv_digit_w7.txt)); 1 x term: measured (hexlead_w9_peak_cap_n256.json; abort cap 911737 executed Toffoli charged (946884 emitted, 0 of 1024 random-outcome lanes over it); + 532 declared Toffoli outside the checked circuit (o1 correction-phase digit register (o1/hexdigit_check.py identity - conv, o2/results5/digit_reg.txt))); 3 x w8: measured (hexlead_w8_peak_cap_n256.json; abort cap 779515 executed Toffoli charged (814662 emitted, 0 of 1024 random-outcome lanes over it); + 486 declared Toffoli outside the checked circuit (o1 correction-phase digit register (o1/hexdigit_check.py identity - conv, o2/results5/digit_reg.txt))); first lookup 17 bits: measured (first_ss_a17_p512.json); counted sine-state preparation):
+  largest run: 270 exponent bits, 16 windows, 15 additions + initial lookup (66588 Toffoli), 1.226e+07 Toffoli, 1246 qubits
+  B = 1.528e+10 = 0.2672 B0 (B0 = 5.7195e+10 = 1,457 x 39,255,168, Häner et al. body; 0.2635 of the rounded 5.8e10)
+  T = 1.681e+12 = 29.390 B0 = 9.797 T0 (T0 = 3 x B0; budget 110 runs x B; mean over trials 29.390 B0, max 29.390 B0)
+  cost vs targets: intermediate (B <= B0/2, T <= 4 T0) outside; main (B <= B0/4, T <= 10 T0) outside
+VERDICT: PASS (95 % lower bound >= 0.99 at n = 256 on secp256k1, point estimate >= 0.99 at toy sizes, no flags)
+targets (PASS, a measured grade and exact arithmetic or a circuit-specific bound are needed): intermediate not met, main not met

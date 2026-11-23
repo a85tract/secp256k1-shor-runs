@@ -1,0 +1,11 @@
+r=211 box 29x29 c=3.986 envelope a=u b=u; Theorem-1 bound log2(1+c)=2.318
+  pad bits (pa,pb)=(0,0): I = 0.8795 bits
+  pad bits (pa,pb)=(1,1): I = 0.8764 bits
+  pad bits (pa,pb)=(2,2): I = 0.8761 bits
+r=211 box 58x58 c=15.943 envelope a=s2 b=s2; Theorem-1 bound log2(1+c)=4.083
+  pad bits (pa,pb)=(0,0): I = 1.7583 bits
+  pad bits (pa,pb)=(1,1): I = 1.7583 bits
+  pad bits (pa,pb)=(2,2): I = 1.7583 bits
+r=211 box 116x116 c=63.773 envelope a=u b=u; Theorem-1 bound log2(1+c)=6.017
+  pad bits (pa,pb)=(0,0): I = 3.7695 bits
+  pad bits (pa,pb)=(1,1): I = 3.7715 bits

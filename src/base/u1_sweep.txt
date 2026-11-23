@@ -1,0 +1,14 @@
+calibration W = 16: layer 90535 + stream 761147 + 3 = 851685 = V-B count 851685; x-site widths [257, 256, 256]
+  W    layer    at cap qubits  q*T per bit |   f adds      first     Toffoli   peak     B/B0
+ 12     8935    734938   1240   7.5944e+07 |  16   38      33680    27961324   1240  0.60621
+ 13    14375    740378   1241   7.0678e+07 |  10   35       1072    25914302   1241  0.56228
+ 14    25895    751898   1242   6.6704e+07 |  18   32     132380    24193116   1242  0.52536
+ 15    47015    773018   1243   6.4057e+07 |  16   30      33680    23224220   1243  0.50473
+ 16    90535    816538   1244   6.3486e+07 |  16   28      33017    22896081   1244  0.49800
+ 17   173735    899738   1245   6.5893e+07 |  18   27     132380    24425306   1245  0.53168
+ 18   342695   1068698   1246   7.3978e+07 |  10   26       1072    27787220   1246  0.60535 (peak LB)
+ 19   672935   1398938   1247   9.1815e+07 |  10   24       1072    33575584   1247  0.73204 (peak LB)
+ 20  1338535   2064538   1248   1.2883e+08 |  16   23      33680    47518054   1248  1.03685 (peak LB)
+W = 16 with plain unary-iteration reads instead of select-swap: layer 168004, window 894007 at cap, run 25065213 Toffoli x 1,244 = 0.545174 B0 (select-swap gain 1.0947)
+B-minimizing window: W = 16 (first lookup 16 bits, 28 additions): B / B0 = 0.497995
+wrote base/lead_w16_cap.json: abort cap 816538, declared failure 2.4689e-03 per addition

@@ -1,0 +1,20 @@
+| Row | bits | additions + first | qubits | Toffoli per run | B / B0 | runs | T / T0 | success |
+|---|---|---|---|---|---|---|---|---|
+| Haener et al. (B0) | 466 | 28 + 18 | 1,457 | 39,255,168 | 1.000000 | 3 | 1.000 | 0.861 per attempt |
+| U1 | 464 | 28 + 16 | 1,244 | 22,896,081 | 0.497995 | 4 | 0.664 | 4967 / 5000 with 4 runs; 0.7225 per run |
+| U1, textbook 2m = 512 bits | 512 | 31 + 16 | 1,244 | 25,345,695 | 0.551275 | 4 | 0.735 | 4959 / 5000 |
+| U2-h (R3's kinds) | 464 | 27 + 16 | 1,246 | 22,151,891 | 0.482583 | 4 | 0.643 | decoder 0.9890 (16 candidates, b at q 0.999, 2^37.1 per run, 5000 samples); per run 0.7235 |
+| U2-n (B''s kinds) | 468 | 27 + 16 | 1,246 | 21,823,943 | 0.475439 | 4 | 0.634 | decoder 0.9900 (16 candidates, b at q 0.999, 2^36.2 per run, 5000 samples); per run 0.7242 |
+| U2-nt (C''s kinds) | 468 | 27 + 16 | 1,246 | 21,425,851 | 0.466767 | 4 | 0.622 | decoder 0.9900 (16 candidates, b at q 0.999, 2^36.2 per run, 5000 samples); per run 0.7277 |
+| Ekera control, s = 4, plain decoder | 328 | 20 + 16 | 1,244 | 16,363,777 | 0.355916 | 65 | 7.712 | 4975 / 5000 with 13 batches; per batch 0.3235 |
+| R3 D = 270 hex stack | 270 | 15 + 18 | 1,246 | 12,626,051 | 0.275061 | 79 | 7.243 | 563 / 563 |
+| B' norm-7, W9 terminal | 270 | 15 + 17 | 1,246 | 12,264,316 | 0.267181 | 110 | 9.797 | 563 / 563 |
+| C' norm-7, root-sign terminal | 270 | 15 + 17 | 1,246 | 11,866,224 | 0.258508 | 102 | 8.789 | 563 / 563 |
+
+chain (B0 / B): core Haener -> U1 = 2.008
+  -> U2-h windows 1.032 -> R3 split 1.754; product 3.636 = B0 / B(R3) 3.636; ours (windows x split) 1.810
+  -> U2-n windows 1.047 -> B' split 1.779; product 3.743 = B0 / B(B') 3.743; ours (windows x split) 1.864
+  -> U2-nt windows 1.067 -> C' split 1.806; product 3.868 = B0 / B(C') 3.868; ours (windows x split) 1.926
+inside the window step: U1 -> U2-h (hex windows, terminal = W9 window, sine-top first lookup) 1.032; U2-h -> U2-n (norm-7 windows) 1.015; U2-n -> U2-nt (root-sign terminal) 1.019
+Ekera path: U1 -> Ekera control (his tradeoff, plain decoding) 1.399; -> R3 / B' / C' (our windows, decoder and certificate) 1.294 / 1.332 / 1.377; B0 / B(Ekera control) = 2.810
+domain step (exponent bits per run): U1 464 -> Ekera control 328 = 1.415; ours 464.5 -> 267.9 (log2 norms of U2-nt and C') = 1.734, 464 -> 270 harness bits = 1.719

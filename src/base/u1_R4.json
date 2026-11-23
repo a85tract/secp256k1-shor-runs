@@ -1,0 +1,231 @@
+{
+ "candidate": "base/u1_shor.py",
+ "params": [],
+ "approx": true,
+ "scan": [],
+ "sizes": [
+  {
+   "n": 16,
+   "trials": 200,
+   "ok": 200,
+   "interval": [
+    0.9811539940816791,
+    1.0
+   ],
+   "exact_lower": null,
+   "secp_trials": 0,
+   "secp_ok": 0,
+   "mean_runs": 1.0,
+   "max_runs": 1,
+   "mean_ops": 182.12,
+   "max_ops": 5870,
+   "errors": {},
+   "secs": 2.5043470000000074e-05,
+   "unsimulated": 0,
+   "garbage_runs": 3,
+   "heuristic_runs": 200,
+   "capped_attempts": 0,
+   "lemma_g_runs": 0,
+   "max_attempt": 0,
+   "shapes": [
+    [
+     [
+      16,
+      13
+     ],
+     1
+    ]
+   ]
+  },
+  {
+   "n": 24,
+   "trials": 200,
+   "ok": 200,
+   "interval": [
+    0.9811539940816791,
+    1.0
+   ],
+   "exact_lower": null,
+   "secp_trials": 0,
+   "secp_ok": 0,
+   "mean_runs": 1.04,
+   "max_runs": 2,
+   "mean_ops": 1558.905,
+   "max_ops": 34586,
+   "errors": {},
+   "secs": 4.655341000000021e-05,
+   "unsimulated": 0,
+   "garbage_runs": 8,
+   "heuristic_runs": 208,
+   "capped_attempts": 0,
+   "lemma_g_runs": 0,
+   "max_attempt": 0,
+   "shapes": [
+    [
+     [
+      24,
+      20
+     ],
+     3
+    ]
+   ]
+  },
+  {
+   "n": 32,
+   "trials": 200,
+   "ok": 200,
+   "interval": [
+    0.9811539940816791,
+    1.0
+   ],
+   "exact_lower": null,
+   "secp_trials": 0,
+   "secp_ok": 0,
+   "mean_runs": 1.025,
+   "max_runs": 2,
+   "mean_ops": 2189.465,
+   "max_ops": 60119,
+   "errors": {},
+   "secs": 5.343058499999956e-05,
+   "unsimulated": 0,
+   "garbage_runs": 5,
+   "heuristic_runs": 205,
+   "capped_attempts": 0,
+   "lemma_g_runs": 0,
+   "max_attempt": 0,
+   "shapes": [
+    [
+     [
+      32,
+      26
+     ],
+     3
+    ]
+   ]
+  },
+  {
+   "n": 64,
+   "trials": 200,
+   "ok": 200,
+   "interval": [
+    0.9811539940816791,
+    1.0
+   ],
+   "exact_lower": null,
+   "secp_trials": 0,
+   "secp_ok": 0,
+   "mean_runs": 1.065,
+   "max_runs": 2,
+   "mean_ops": 23890.03,
+   "max_ops": 393551,
+   "errors": {},
+   "secs": 0.00012685723500000009,
+   "unsimulated": 0,
+   "garbage_runs": 13,
+   "heuristic_runs": 213,
+   "capped_attempts": 0,
+   "lemma_g_runs": 0,
+   "max_attempt": 0,
+   "shapes": [
+    [
+     [
+      64,
+      52
+     ],
+     7
+    ]
+   ]
+  },
+  {
+   "n": 128,
+   "trials": 200,
+   "ok": 200,
+   "interval": [
+    0.9811539940816791,
+    1.0
+   ],
+   "exact_lower": null,
+   "secp_trials": 0,
+   "secp_ok": 0,
+   "mean_runs": 1.115,
+   "max_runs": 3,
+   "mean_ops": 2580814.63,
+   "max_ops": 44087407,
+   "errors": {},
+   "secs": 0.00033829653000000073,
+   "unsimulated": 0,
+   "garbage_runs": 23,
+   "heuristic_runs": 223,
+   "capped_attempts": 0,
+   "lemma_g_runs": 0,
+   "max_attempt": 0,
+   "shapes": [
+    [
+     [
+      128,
+      104
+     ],
+     14
+    ]
+   ]
+  },
+  {
+   "n": 256,
+   "trials": 5000,
+   "ok": 4967,
+   "interval": [
+    0.9907458855884145,
+    0.9952965183118209
+   ],
+   "exact_lower": null,
+   "secp_trials": 5000,
+   "secp_ok": 4967,
+   "mean_runs": 1.3774,
+   "max_runs": 4,
+   "mean_ops": 37645098905.9744,
+   "max_ops": 382476424962,
+   "errors": {},
+   "secs": 0.0017823730059999953,
+   "unsimulated": 0,
+   "garbage_runs": 1909,
+   "heuristic_runs": 6887,
+   "capped_attempts": 0,
+   "lemma_g_runs": 0,
+   "max_attempt": 0,
+   "shapes": [
+    [
+     [
+      256,
+      208
+     ],
+     28
+    ]
+   ]
+  }
+ ],
+ "cost256": {
+  "B": 28482724764.0,
+  "B_over_B0": 0.4979951820000168,
+  "B_over_B0_rounded": 0.49108146144827586,
+  "T": 113930899056.0,
+  "T_over_T0": 0.6639935760000224,
+  "budget_runs": 4,
+  "largest_run": {
+   "exp_bits": 464,
+   "windows": 29,
+   "additions": 28,
+   "first_lookup": 33017,
+   "qubits": 1244,
+   "toffoli": 22896081.0,
+   "cost": 28482724764.0,
+   "grade": "measured (lead_w16_cap.json; abort cap 816538 executed Toffoli charged (851685 emitted, 0 of 0 random-outcome lanes over it))",
+   "q_tables": true
+  },
+  "targets": {
+   "intermediate": true,
+   "main": false
+  }
+ },
+ "flags": [],
+ "verdict": "PASS"
+}

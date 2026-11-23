@@ -1,0 +1,68 @@
+{
+ "candidate": "base/u1_shor.py",
+ "params": [
+  "ATTEMPTS=1"
+ ],
+ "approx": false,
+ "scan": [],
+ "sizes": [
+  {
+   "n": 256,
+   "trials": 20000,
+   "ok": 19955,
+   "interval": [
+    0.9969908880248097,
+    0.998317933056837
+   ],
+   "exact_lower": null,
+   "secp_trials": 20000,
+   "secp_ok": 19955,
+   "mean_runs": 1.0,
+   "max_runs": 1,
+   "mean_ops": 1208345045.62795,
+   "max_ops": 95619109796,
+   "errors": {},
+   "secs": 0.00033291039425,
+   "unsimulated": 0,
+   "garbage_runs": 0,
+   "heuristic_runs": 0,
+   "capped_attempts": 0,
+   "lemma_g_runs": 0,
+   "max_attempt": 0,
+   "shapes": [
+    [
+     [
+      256,
+      208
+     ],
+     28
+    ]
+   ]
+  }
+ ],
+ "cost256": {
+  "B": 28482724764.0,
+  "B_over_B0": 0.4979951820000168,
+  "B_over_B0_rounded": 0.49108146144827586,
+  "T": 28482724764.0,
+  "T_over_T0": 0.1659983940000056,
+  "budget_runs": 1,
+  "largest_run": {
+   "exp_bits": 464,
+   "windows": 29,
+   "additions": 28,
+   "first_lookup": 33017,
+   "qubits": 1244,
+   "toffoli": 22896081.0,
+   "cost": 28482724764.0,
+   "grade": "measured (lead_w16_cap.json; abort cap 816538 executed Toffoli charged (851685 emitted, 0 of 0 random-outcome lanes over it))",
+   "q_tables": true
+  },
+  "targets": {
+   "intermediate": true,
+   "main": false
+  }
+ },
+ "flags": [],
+ "verdict": "PASS"
+}

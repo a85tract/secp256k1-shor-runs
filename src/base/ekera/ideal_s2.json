@@ -1,0 +1,69 @@
+{
+ "candidate": "base/ekera_ctrl.py",
+ "params": [
+  "S=2",
+  "ATTEMPTS=1"
+ ],
+ "approx": false,
+ "scan": [],
+ "sizes": [
+  {
+   "n": 256,
+   "trials": 1000,
+   "ok": 998,
+   "interval": [
+    0.9927370411104123,
+    0.9994513678975429
+   ],
+   "exact_lower": null,
+   "secp_trials": 1000,
+   "secp_ok": 998,
+   "mean_runs": 3.0,
+   "max_runs": 3,
+   "mean_ops": 59888.108,
+   "max_ops": 69296,
+   "errors": {},
+   "secs": 0.002945296802999996,
+   "unsimulated": 0,
+   "garbage_runs": 0,
+   "heuristic_runs": 0,
+   "capped_attempts": 0,
+   "lemma_g_runs": 0,
+   "max_attempt": 0,
+   "shapes": [
+    [
+     [
+      264,
+      128
+     ],
+     24
+    ]
+   ]
+  }
+ ],
+ "cost256": {
+  "B": 24419631676.0,
+  "B_over_B0": 0.42695560279518613,
+  "B_over_B0_rounded": 0.4210281323448276,
+  "T": 73258895028.0,
+  "T_over_T0": 0.42695560279518613,
+  "budget_runs": 3,
+  "largest_run": {
+   "exp_bits": 392,
+   "windows": 25,
+   "additions": 24,
+   "first_lookup": 33017,
+   "qubits": 1244,
+   "toffoli": 19629929.0,
+   "cost": 24419631676.0,
+   "grade": "measured (lead_w16_cap.json; abort cap 816538 executed Toffoli charged (851685 emitted, 0 of 0 random-outcome lanes over it))",
+   "q_tables": true
+  },
+  "targets": {
+   "intermediate": true,
+   "main": false
+  }
+ },
+ "flags": [],
+ "verdict": "PASS"
+}

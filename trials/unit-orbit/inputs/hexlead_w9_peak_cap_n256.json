@@ -1,0 +1,53 @@
+{
+ "circuit": "h1/hexcap/hexlead_cap.py",
+ "params": [
+  "YSEL=2",
+  "W=9",
+  "HOLD=peak"
+ ],
+ "kind": "hex_window_add",
+ "exact": false,
+ "sizes": [
+  {
+   "n": 256,
+   "verdict": "PASS",
+   "mode": "random (1 x 1024 inputs)",
+   "lanes": 1024,
+   "random_failures": 2,
+   "random_flagged": 0,
+   "exceptional_flagged": 0,
+   "first_lookup": {
+    "toffoli": 262393,
+    "peak_qubits": 782
+   },
+   "first_lookup_offset": {
+    "toffoli": 524286,
+    "peak_qubits": 549
+   },
+   "exceptional_failures": 15,
+   "exceptional_lanes": 60,
+   "counts": {
+    "toffoli": 946884,
+    "cnot": 53953617,
+    "x": 1268639,
+    "measurements": 979489,
+    "peak_qubits": 1246,
+    "live_at_end": 549,
+    "toffoli_expected_executed_stream": 723714.75390625,
+    "toffoli_executed_mean": 909448.75390625,
+    "toffoli_executed_min": 907695,
+    "toffoli_executed_max": 911149,
+    "outcome_lanes": 1024
+   },
+   "abort_cap": 911737,
+   "aborted": 0,
+   "window": 9,
+   "declared_failure": 0.00275
+  }
+ ],
+ "extra_toffoli": 532,
+ "extra_toffoli_src": "o1 correction-phase digit register (o1/hexdigit_check.py identity - conv, o2/results5/digit_reg.txt)",
+ "stream_toffoli": 761147,
+ "stream_cap": 726000,
+ "stream_raw_sha256": "fb14f5d55f8abead1f6a2a729050e78f0b0a3f4f74e53a45efd6ac9a600830f8"
+}

@@ -1,0 +1,137 @@
+{
+ "candidate": "base/u2_price.py",
+ "params": [
+  "VARIANT='nt'"
+ ],
+ "approx": false,
+ "scan": [],
+ "sizes": [
+  {
+   "n": 256,
+   "trials": 1,
+   "ok": 0,
+   "interval": [
+    0.0,
+    0.7934567085261071
+   ],
+   "exact_lower": null,
+   "secp_trials": 1,
+   "secp_ok": 0,
+   "mean_runs": 1.0,
+   "max_runs": 1,
+   "mean_ops": 81265672.0,
+   "max_ops": 81265672,
+   "errors": {},
+   "secs": 0.682650071,
+   "unsimulated": 0,
+   "garbage_runs": 0,
+   "heuristic_runs": 0,
+   "capped_attempts": 0,
+   "lemma_g_runs": 0,
+   "max_attempt": 0,
+   "shapes": [
+    [
+     [
+      258,
+      210
+     ],
+     27
+    ]
+   ]
+  }
+ ],
+ "cost256": {
+  "B": 26696610346.0,
+  "B_over_B0": 0.4667665554541115,
+  "B_over_B0_rounded": 0.4602863852758621,
+  "T": 26696610346.0,
+  "T_over_T0": 0.15558885181803717,
+  "budget_runs": 1,
+  "largest_run": {
+   "exp_bits": 468,
+   "windows": 28,
+   "additions": 27,
+   "add_ws": [
+    "n7",
+    "m7",
+    "m7",
+    "m7",
+    "m7",
+    "m7",
+    "m7",
+    "m7",
+    "m7",
+    "m7",
+    8,
+    8,
+    8,
+    8,
+    8,
+    9,
+    "n7",
+    "m7",
+    "m7",
+    "m7",
+    "m7",
+    "m7",
+    "m7",
+    "m7",
+    8,
+    8,
+    8
+   ],
+   "add_kinds": [
+    "n7",
+    "m7",
+    "m7",
+    "m7",
+    "m7",
+    "m7",
+    "m7",
+    "m7",
+    "m7",
+    "m7",
+    "w8",
+    "w8",
+    "w8",
+    "w8",
+    "w8",
+    "term",
+    "n7",
+    "m7",
+    "m7",
+    "m7",
+    "m7",
+    "m7",
+    "m7",
+    "m7",
+    "w8",
+    "w8",
+    "w8"
+   ],
+   "term_classical": 81265672,
+   "first_lookup": 33680,
+   "first_bits": 16,
+   "qubits": 1246,
+   "toffoli": 21425851.0,
+   "cost": 26696610346.0,
+   "grade": "16 x m7: measured (n7lead_m7_peak_cap_n256.json; abort cap 812589 executed Toffoli charged (847736 emitted, 0 of 1024 random-outcome lanes over it); + 630 declared Toffoli outside the checked circuit (o1 norm-7 correction-phase digit register (o1/n7digit.py, 2 - w): harness/vb.py o1/s5/n7digit_check.py --n 7 -p BAR=True -p MODE=identity 902 - conversion 272 (o1/s5/n7conv_check.py); o1/results/s5/n7digit_w7_identity.txt, h1/n7/n7conv_digit_w7.txt)); 2 x n7: measured (n7lead_n7_peak_cap_n256.json; abort cap 812589 executed Toffoli charged (847736 emitted, 0 of 1024 random-outcome lanes over it); + 632 declared Toffoli outside the checked circuit (o1 norm-7 correction-phase digit register (o1/n7digit.py, 3 + w): harness/vb.py o1/s5/n7digit_check.py --n 7 -p BAR=False -p MODE=identity 904 - conversion 272 (o1/s5/n7conv_check.py); o1/results/s5/n7digit_w7_identity.txt, h1/n7/n7conv_digit_w7.txt)); 1 x term: measured (hexterm_w9_n256.json; abort cap 513645 executed Toffoli charged (527489 emitted, 0 of 0 random-outcome lanes over it); + 532 declared Toffoli outside the checked circuit (o1 correction-phase digit register (o1/hexdigit_check.py identity - conv, o2/results5/digit_reg.txt))); 8 x w8: measured (hexlead_w8_peak_cap_n256.json; abort cap 779515 executed Toffoli charged (814662 emitted, 0 of 1024 random-outcome lanes over it); + 486 declared Toffoli outside the checked circuit (o1 correction-phase digit register (o1/hexdigit_check.py identity - conv, o2/results5/digit_reg.txt))); 18 norm-7 registers, seven-state preparation and F_7 x (Z/2^w)^2 Fourier measurement: checked circuits, 0 Toffoli, 0 ancilla (h1/n7/n7reg_circuits.py); first lookup 16 bits: measured (first_ss_a16_p512.json); counted sine-state preparation",
+   "q_tables": true,
+   "fail_weight": 0.074896875,
+   "kinds": [
+    "m7",
+    "n7",
+    "term",
+    "w8"
+   ],
+   "table_entries": 540708,
+   "measured": true
+  },
+  "targets": {
+   "intermediate": true,
+   "main": false
+  }
+ },
+ "flags": [],
+ "verdict": "FAIL"
+}

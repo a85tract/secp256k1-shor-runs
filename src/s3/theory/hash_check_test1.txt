@@ -1,0 +1,25 @@
+(a) b=1 r=13 N=6: max |E_H rho - ((1-q) rho_d + q psi psi^+)| over all d = 1.94e-16
+(a) b=2 r=13 N=6: max |E_H rho - ((1-q) rho_d + q psi psi^+)| over all d = 1.39e-14
+(b),(c) chi in bits; bound = (1-q) log2(1+(N-1)/r)
+r=101 box 8x8 N=64 c=0.63  raw chi=0.427  Theorem-1 bound=0.699
+   b=1: hidden-H chi = 0.210 (bound 0.350, ok=True) | fixed known H: mean 2.594 max 2.619 (x3.7 of Thm-1 bound)
+   b=2: hidden-H chi = 0.315 (bound 0.525, ok=True) | fixed known H: mean 3.016 max 3.071 (x4.4 of Thm-1 bound)
+   b=4: hidden-H chi = 0.396 (bound 0.656, ok=True) | fixed known H: mean 2.091 max 2.142 (x3.1 of Thm-1 bound)
+r=103 box 10x10 N=100 c=0.97  raw chi=0.661  Theorem-1 bound=0.972
+   b=1: hidden-H chi = 0.328 (bound 0.486, ok=True) | fixed known H: mean 2.833 max 2.886 (x3.0 of Thm-1 bound)
+   b=2: hidden-H chi = 0.492 (bound 0.729, ok=True) | fixed known H: mean 3.488 max 3.509 (x3.6 of Thm-1 bound)
+   b=4: hidden-H chi = 0.616 (bound 0.911, ok=True) | fixed known H: mean 2.638 max 2.709 (x2.8 of Thm-1 bound)
+r=211 box 12x12 N=144 c=0.68  raw chi=0.469  Theorem-1 bound=0.747
+   b=1: hidden-H chi = 0.233 (bound 0.373, ok=True) | fixed known H: mean 3.205 max 3.222 (x4.3 of Thm-1 bound)
+   b=2: hidden-H chi = 0.349 (bound 0.560, ok=True) | fixed known H: mean 3.930 max 3.941 (x5.3 of Thm-1 bound)
+   b=4: hidden-H chi = 0.437 (bound 0.700, ok=True) | fixed known H: mean 3.063 max 3.098 (x4.2 of Thm-1 bound)
+r=211 box 20x20 N=400 c=1.90  raw chi=1.268  Theorem-1 bound=1.532
+   b=1: hidden-H chi = 0.633 (bound 0.766, ok=True) | fixed known H: mean 3.607 max 3.613 (x2.4 of Thm-1 bound)
+   b=2: hidden-H chi = 0.949 (bound 1.149, ok=True) | fixed known H: mean 4.867 max 4.874 (x3.2 of Thm-1 bound)
+   b=4: hidden-H chi = 1.187 (bound 1.436, ok=True) | fixed known H: mean 4.357 max 4.370 (x2.9 of Thm-1 bound)
+
+real	5m45.496s
+user	5m40.263s
+sys	0m5.179s
+
+[exited with code 0]

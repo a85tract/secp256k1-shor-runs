@@ -1,0 +1,263 @@
+{
+ "candidate": "h1/candidates/stack_d270_4w.py",
+ "params": [
+  "RUNS=79",
+  "SPLIT=1",
+  "L=11",
+  "NEED=28",
+  "HEX=[9,8,8,8,8,8,8,8,8,8,9,9,9,9,9,3]"
+ ],
+ "approx": true,
+ "scan": [],
+ "sizes": [
+  {
+   "n": 16,
+   "trials": 200,
+   "ok": 200,
+   "interval": [
+    0.9811539940816791,
+    1.0
+   ],
+   "exact_lower": null,
+   "secp_trials": 0,
+   "secp_ok": 0,
+   "mean_runs": 16.0,
+   "max_runs": 16,
+   "mean_ops": 444886.075,
+   "max_ops": 1865645,
+   "errors": {},
+   "secs": 0.06372603823000006,
+   "unsimulated": 0,
+   "garbage_runs": 61,
+   "heuristic_runs": 0,
+   "capped_attempts": 0,
+   "lemma_g_runs": 3200,
+   "max_attempt": 10893,
+   "shapes": [
+    [
+     [
+      6,
+      20
+     ],
+     1
+    ]
+   ]
+  },
+  {
+   "n": 24,
+   "trials": 200,
+   "ok": 200,
+   "interval": [
+    0.9811539940816791,
+    1.0
+   ],
+   "exact_lower": null,
+   "secp_trials": 0,
+   "secp_ok": 0,
+   "mean_runs": 18.0,
+   "max_runs": 18,
+   "mean_ops": 4005939.285,
+   "max_ops": 4790266,
+   "errors": {},
+   "secs": 0.6040590069500005,
+   "unsimulated": 0,
+   "garbage_runs": 48,
+   "heuristic_runs": 0,
+   "capped_attempts": 0,
+   "lemma_g_runs": 3600,
+   "max_attempt": 36414,
+   "shapes": [
+    [
+     [
+      6,
+      28
+     ],
+     1
+    ]
+   ]
+  },
+  {
+   "n": 32,
+   "trials": 200,
+   "ok": 200,
+   "interval": [
+    0.9811539940816791,
+    1.0
+   ],
+   "exact_lower": null,
+   "secp_trials": 0,
+   "secp_ok": 0,
+   "mean_runs": 20.0,
+   "max_runs": 20,
+   "mean_ops": 2811608.085,
+   "max_ops": 61301729,
+   "errors": {},
+   "secs": 0.1543035820550007,
+   "unsimulated": 0,
+   "garbage_runs": 119,
+   "heuristic_runs": 0,
+   "capped_attempts": 0,
+   "lemma_g_runs": 4000,
+   "max_attempt": 94071,
+   "shapes": [
+    [
+     [
+      6,
+      36
+     ],
+     2
+    ]
+   ]
+  },
+  {
+   "n": 64,
+   "trials": 200,
+   "ok": 200,
+   "interval": [
+    0.9811539940816791,
+    1.0
+   ],
+   "exact_lower": null,
+   "secp_trials": 0,
+   "secp_ok": 0,
+   "mean_runs": 23.0,
+   "max_runs": 23,
+   "mean_ops": 78211312.625,
+   "max_ops": 3104475315,
+   "errors": {},
+   "secs": 0.51210839107,
+   "unsimulated": 0,
+   "garbage_runs": 274,
+   "heuristic_runs": 0,
+   "capped_attempts": 0,
+   "lemma_g_runs": 4600,
+   "max_attempt": 352144,
+   "shapes": [
+    [
+     [
+      8,
+      68
+     ],
+     4
+    ]
+   ]
+  },
+  {
+   "n": 128,
+   "trials": 200,
+   "ok": 200,
+   "interval": [
+    0.9811539940816791,
+    1.0
+   ],
+   "exact_lower": null,
+   "secp_trials": 0,
+   "secp_ok": 0,
+   "mean_runs": 28.0,
+   "max_runs": 28,
+   "mean_ops": 184892128.155,
+   "max_ops": 8199185252,
+   "errors": {},
+   "secs": 4.8324693954550035,
+   "unsimulated": 0,
+   "garbage_runs": 352,
+   "heuristic_runs": 0,
+   "capped_attempts": 0,
+   "lemma_g_runs": 5600,
+   "max_attempt": 3666586,
+   "shapes": [
+    [
+     [
+      10,
+      132
+     ],
+     7
+    ]
+   ]
+  },
+  {
+   "n": 256,
+   "trials": 563,
+   "ok": 563,
+   "interval": [
+    0.9932227980444626,
+    1.0
+   ],
+   "exact_lower": 0.9945069843789379,
+   "secp_trials": 563,
+   "secp_ok": 563,
+   "mean_runs": 79.0,
+   "max_runs": 79,
+   "mean_ops": 6803250314.6802845,
+   "max_ops": 573087614708,
+   "errors": {},
+   "secs": 12.927759631087024,
+   "unsimulated": 0,
+   "garbage_runs": 4405,
+   "heuristic_runs": 0,
+   "capped_attempts": 0,
+   "lemma_g_runs": 44477,
+   "max_attempt": 61659225,
+   "shapes": [
+    [
+     [
+      11,
+      259
+     ],
+     15
+    ]
+   ]
+  }
+ ],
+ "cost256": {
+  "B": 15732059546.0,
+  "B_over_B0": 0.27506110885667695,
+  "B_over_B0_rounded": 0.27124240596551724,
+  "T": 1242832704134.0,
+  "T_over_T0": 7.243275866559159,
+  "budget_runs": 79,
+  "largest_run": {
+   "exp_bits": 270,
+   "windows": 16,
+   "additions": 15,
+   "add_ws": [
+    9,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    9,
+    9,
+    9,
+    9,
+    9
+   ],
+   "first_lookup": 132380,
+   "first_bits": 18,
+   "qubits": 1246,
+   "toffoli": 12626051.0,
+   "cost": 15732059546.0,
+   "grade": "1 x term: measured (hexlead_w9_peak_cap_n256.json; abort cap 911737 executed Toffoli charged (946884 emitted, 0 of 1024 random-outcome lanes over it); + 532 declared Toffoli outside the checked circuit (o1 correction-phase digit register (o1/hexdigit_check.py identity - conv, o2/results5/digit_reg.txt))); 9 x w8: measured (hexlead_w8_peak_cap_n256.json; abort cap 779515 executed Toffoli charged (814662 emitted, 0 of 1024 random-outcome lanes over it); + 486 declared Toffoli outside the checked circuit (o1 correction-phase digit register (o1/hexdigit_check.py identity - conv, o2/results5/digit_reg.txt))); 5 x w9: measured (hexlead_w9_peak_cap_n256.json; abort cap 911737 executed Toffoli charged (946884 emitted, 0 of 1024 random-outcome lanes over it); + 532 declared Toffoli outside the checked circuit (o1 correction-phase digit register (o1/hexdigit_check.py identity - conv, o2/results5/digit_reg.txt))); first lookup 18 bits: measured (first_ss_a18_p512.json); counted sine-state preparation",
+   "q_tables": false,
+   "fail_weight": 0.04286718750000001,
+   "kinds": [
+    "term",
+    "w8",
+    "w9"
+   ],
+   "table_entries": 622612,
+   "measured": true
+  },
+  "targets": {
+   "intermediate": false,
+   "main": false
+  }
+ },
+ "flags": [],
+ "verdict": "PASS"
+}

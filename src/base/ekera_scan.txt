@@ -1,0 +1,225 @@
+candidate base/ekera_ctrl.py S=1 ATTEMPTS=1
+source scan: clean
+arithmetic model: approximate with flagged failures, coupling model (bad weight 0.00247 per addition from the declared estimate, summed over a run; flagged runs are bad runs, no rerun; runs without offset(), runs whose approximate additions read tables built from Q, hash runs: old heuristic garbage model); additions priced measured (lead_w16_cap.json; abort cap 816538 executed Toffoli charged (851685 emitted, 0 of 0 random-outcome lanes over it))
+    n trials  success      95% interval   runs    lg ops lg opsmax  s/trial  per-run shape
+  256   2000   0.4515   [0.4298, 0.4734]   2.00     14.56     14.80    0.002  bits 263+256 -> 32 add.
+      1305 runs returned garbage (approximate-arithmetic model, 4000 runs under the old heuristic model)
+cost at n = 256 (grade measured (lead_w16_cap.json; abort cap 816538 executed Toffoli charged (851685 emitted, 0 of 0 random-outcome lanes over it)): 1244 qubits, 8.165e+05 Toffoli per windowed addition, window 16):
+  largest run: 519 exponent bits, 33 windows, 32 additions + initial lookup (33017 Toffoli), 2.616e+07 Toffoli, 1244 qubits
+  B = 3.255e+10 = 0.5690 B0 (B0 = 5.7195e+10 = 1,457 x 39,255,168, Häner et al. body; 0.5611 of the rounded 5.8e10)
+  T = 6.509e+10 = 1.138 B0 = 0.379 T0 (T0 = 3 x B0; budget 2 runs x B; mean over trials 1.138 B0, max 1.138 B0)
+  cost vs targets: intermediate (B <= B0/2, T <= 4 T0) outside; main (B <= B0/4, T <= 10 T0) outside
+VERDICT: FAIL (success below 0.99 at n = 256)
+targets (PASS, a measured grade and exact arithmetic or a circuit-specific bound are needed): intermediate not met, main not met
+candidate base/ekera_ctrl.py S=1 ATTEMPTS=1
+source scan: clean
+arithmetic model: exact; additions priced measured (lead_w16_cap.json; abort cap 816538 executed Toffoli charged (851685 emitted, 0 of 0 random-outcome lanes over it))
+    n trials  success      95% interval   runs    lg ops lg opsmax  s/trial  per-run shape
+  256   1000   0.9970   [0.9912, 0.9990]   2.00     14.56     14.74    0.002  bits 263+256 -> 32 add.
+cost at n = 256 (grade measured (lead_w16_cap.json; abort cap 816538 executed Toffoli charged (851685 emitted, 0 of 0 random-outcome lanes over it)): 1244 qubits, 8.165e+05 Toffoli per windowed addition, window 16):
+  largest run: 519 exponent bits, 33 windows, 32 additions + initial lookup (33017 Toffoli), 2.616e+07 Toffoli, 1244 qubits
+  B = 3.255e+10 = 0.5690 B0 (B0 = 5.7195e+10 = 1,457 x 39,255,168, Häner et al. body; 0.5611 of the rounded 5.8e10)
+  T = 6.509e+10 = 1.138 B0 = 0.379 T0 (T0 = 3 x B0; budget 2 runs x B; mean over trials 1.138 B0, max 1.138 B0)
+  cost vs targets: intermediate (B <= B0/2, T <= 4 T0) outside; main (B <= B0/4, T <= 10 T0) outside
+VERDICT: PASS (95 % lower bound >= 0.99 at n = 256 on secp256k1, point estimate >= 0.99 at toy sizes, no flags)
+targets (PASS, a measured grade and exact arithmetic or a circuit-specific bound are needed): intermediate not met, main not met
+candidate base/ekera_ctrl.py S=2 ATTEMPTS=1
+source scan: clean
+arithmetic model: approximate with flagged failures, coupling model (bad weight 0.00247 per addition from the declared estimate, summed over a run; flagged runs are bad runs, no rerun; runs without offset(), runs whose approximate additions read tables built from Q, hash runs: old heuristic garbage model); additions priced measured (lead_w16_cap.json; abort cap 816538 executed Toffoli charged (851685 emitted, 0 of 0 random-outcome lanes over it))
+    n trials  success      95% interval   runs    lg ops lg opsmax  s/trial  per-run shape
+  256   2000   0.4395   [0.4179, 0.4613]   3.00     15.87     16.08    0.003  bits 264+128 -> 24 add.
+      1427 runs returned garbage (approximate-arithmetic model, 6000 runs under the old heuristic model)
+cost at n = 256 (grade measured (lead_w16_cap.json; abort cap 816538 executed Toffoli charged (851685 emitted, 0 of 0 random-outcome lanes over it)): 1244 qubits, 8.165e+05 Toffoli per windowed addition, window 16):
+  largest run: 392 exponent bits, 25 windows, 24 additions + initial lookup (33017 Toffoli), 1.963e+07 Toffoli, 1244 qubits
+  B = 2.442e+10 = 0.4270 B0 (B0 = 5.7195e+10 = 1,457 x 39,255,168, Häner et al. body; 0.4210 of the rounded 5.8e10)
+  T = 7.326e+10 = 1.281 B0 = 0.427 T0 (T0 = 3 x B0; budget 3 runs x B; mean over trials 1.281 B0, max 1.281 B0)
+  cost vs targets: intermediate (B <= B0/2, T <= 4 T0) within; main (B <= B0/4, T <= 10 T0) outside
+VERDICT: FAIL (success below 0.99 at n = 256)
+targets (PASS, a measured grade and exact arithmetic or a circuit-specific bound are needed): intermediate not met, main not met
+candidate base/ekera_ctrl.py S=2 ATTEMPTS=1
+source scan: clean
+arithmetic model: exact; additions priced measured (lead_w16_cap.json; abort cap 816538 executed Toffoli charged (851685 emitted, 0 of 0 random-outcome lanes over it))
+    n trials  success      95% interval   runs    lg ops lg opsmax  s/trial  per-run shape
+  256   1000   0.9980   [0.9927, 0.9995]   3.00     15.87     16.08    0.003  bits 264+128 -> 24 add.
+cost at n = 256 (grade measured (lead_w16_cap.json; abort cap 816538 executed Toffoli charged (851685 emitted, 0 of 0 random-outcome lanes over it)): 1244 qubits, 8.165e+05 Toffoli per windowed addition, window 16):
+  largest run: 392 exponent bits, 25 windows, 24 additions + initial lookup (33017 Toffoli), 1.963e+07 Toffoli, 1244 qubits
+  B = 2.442e+10 = 0.4270 B0 (B0 = 5.7195e+10 = 1,457 x 39,255,168, Häner et al. body; 0.4210 of the rounded 5.8e10)
+  T = 7.326e+10 = 1.281 B0 = 0.427 T0 (T0 = 3 x B0; budget 3 runs x B; mean over trials 1.281 B0, max 1.281 B0)
+  cost vs targets: intermediate (B <= B0/2, T <= 4 T0) within; main (B <= B0/4, T <= 10 T0) outside
+VERDICT: PASS (95 % lower bound >= 0.99 at n = 256 on secp256k1, point estimate >= 0.99 at toy sizes, no flags)
+targets (PASS, a measured grade and exact arithmetic or a circuit-specific bound are needed): intermediate met at grade heuristic only (approximate arithmetic without a circuit-specific bound), main not met
+candidate base/ekera_ctrl.py S=3 ATTEMPTS=1
+source scan: clean
+arithmetic model: approximate with flagged failures, coupling model (bad weight 0.00247 per addition from the declared estimate, summed over a run; flagged runs are bad runs, no rerun; runs without offset(), runs whose approximate additions read tables built from Q, hash runs: old heuristic garbage model); additions priced measured (lead_w16_cap.json; abort cap 816538 executed Toffoli charged (851685 emitted, 0 of 0 random-outcome lanes over it))
+    n trials  success      95% interval   runs    lg ops lg opsmax  s/trial  per-run shape
+  256   2000   0.3680   [0.3471, 0.3894]   4.00     16.98     17.20    0.005  bits 264+86 -> 22 add.
+      1718 runs returned garbage (approximate-arithmetic model, 8000 runs under the old heuristic model)
+cost at n = 256 (grade measured (lead_w16_cap.json; abort cap 816538 executed Toffoli charged (851685 emitted, 0 of 0 random-outcome lanes over it)): 1244 qubits, 8.165e+05 Toffoli per windowed addition, window 16):
+  largest run: 350 exponent bits, 23 windows, 22 additions + initial lookup (33017 Toffoli), 1.8e+07 Toffoli, 1244 qubits
+  B = 2.239e+10 = 0.3914 B0 (B0 = 5.7195e+10 = 1,457 x 39,255,168, Häner et al. body; 0.3860 of the rounded 5.8e10)
+  T = 8.955e+10 = 1.566 B0 = 0.522 T0 (T0 = 3 x B0; budget 4 runs x B; mean over trials 1.566 B0, max 1.566 B0)
+  cost vs targets: intermediate (B <= B0/2, T <= 4 T0) within; main (B <= B0/4, T <= 10 T0) outside
+VERDICT: FAIL (success below 0.99 at n = 256)
+targets (PASS, a measured grade and exact arithmetic or a circuit-specific bound are needed): intermediate not met, main not met
+candidate base/ekera_ctrl.py S=3 ATTEMPTS=1
+source scan: clean
+arithmetic model: exact; additions priced measured (lead_w16_cap.json; abort cap 816538 executed Toffoli charged (851685 emitted, 0 of 0 random-outcome lanes over it))
+    n trials  success      95% interval   runs    lg ops lg opsmax  s/trial  per-run shape
+  256   1000   0.9960   [0.9898, 0.9984]   4.00     16.98     17.17    0.008  bits 264+86 -> 22 add.
+cost at n = 256 (grade measured (lead_w16_cap.json; abort cap 816538 executed Toffoli charged (851685 emitted, 0 of 0 random-outcome lanes over it)): 1244 qubits, 8.165e+05 Toffoli per windowed addition, window 16):
+  largest run: 350 exponent bits, 23 windows, 22 additions + initial lookup (33017 Toffoli), 1.8e+07 Toffoli, 1244 qubits
+  B = 2.239e+10 = 0.3914 B0 (B0 = 5.7195e+10 = 1,457 x 39,255,168, Häner et al. body; 0.3860 of the rounded 5.8e10)
+  T = 8.955e+10 = 1.566 B0 = 0.522 T0 (T0 = 3 x B0; budget 4 runs x B; mean over trials 1.566 B0, max 1.566 B0)
+  cost vs targets: intermediate (B <= B0/2, T <= 4 T0) within; main (B <= B0/4, T <= 10 T0) outside
+VERDICT: FAIL (success below 0.99 at n = 256)
+targets (PASS, a measured grade and exact arithmetic or a circuit-specific bound are needed): intermediate not met, main not met
+candidate base/ekera_ctrl.py S=4 ATTEMPTS=1
+source scan: clean
+arithmetic model: approximate with flagged failures, coupling model (bad weight 0.00247 per addition from the declared estimate, summed over a run; flagged runs are bad runs, no rerun; runs without offset(), runs whose approximate additions read tables built from Q, hash runs: old heuristic garbage model); additions priced measured (lead_w16_cap.json; abort cap 816538 executed Toffoli charged (851685 emitted, 0 of 0 random-outcome lanes over it))
+    n trials  success      95% interval   runs    lg ops lg opsmax  s/trial  per-run shape
+  256   2000   0.3235   [0.3034, 0.3443]   5.00     18.03     18.27    0.013  bits 264+64 -> 20 add.
+      2027 runs returned garbage (approximate-arithmetic model, 10000 runs under the old heuristic model)
+cost at n = 256 (grade measured (lead_w16_cap.json; abort cap 816538 executed Toffoli charged (851685 emitted, 0 of 0 random-outcome lanes over it)): 1244 qubits, 8.165e+05 Toffoli per windowed addition, window 16):
+  largest run: 328 exponent bits, 21 windows, 20 additions + initial lookup (33017 Toffoli), 1.636e+07 Toffoli, 1244 qubits
+  B = 2.036e+10 = 0.3559 B0 (B0 = 5.7195e+10 = 1,457 x 39,255,168, Häner et al. body; 0.3510 of the rounded 5.8e10)
+  T = 1.018e+11 = 1.780 B0 = 0.593 T0 (T0 = 3 x B0; budget 5 runs x B; mean over trials 1.780 B0, max 1.780 B0)
+  cost vs targets: intermediate (B <= B0/2, T <= 4 T0) within; main (B <= B0/4, T <= 10 T0) outside
+VERDICT: FAIL (success below 0.99 at n = 256)
+targets (PASS, a measured grade and exact arithmetic or a circuit-specific bound are needed): intermediate not met, main not met
+candidate base/ekera_ctrl.py S=4 ATTEMPTS=1
+source scan: clean
+arithmetic model: exact; additions priced measured (lead_w16_cap.json; abort cap 816538 executed Toffoli charged (851685 emitted, 0 of 0 random-outcome lanes over it))
+    n trials  success      95% interval   runs    lg ops lg opsmax  s/trial  per-run shape
+  256   1000   0.9910   [0.9830, 0.9953]   5.00     18.04     18.22    0.015  bits 264+64 -> 20 add.
+cost at n = 256 (grade measured (lead_w16_cap.json; abort cap 816538 executed Toffoli charged (851685 emitted, 0 of 0 random-outcome lanes over it)): 1244 qubits, 8.165e+05 Toffoli per windowed addition, window 16):
+  largest run: 328 exponent bits, 21 windows, 20 additions + initial lookup (33017 Toffoli), 1.636e+07 Toffoli, 1244 qubits
+  B = 2.036e+10 = 0.3559 B0 (B0 = 5.7195e+10 = 1,457 x 39,255,168, Häner et al. body; 0.3510 of the rounded 5.8e10)
+  T = 1.018e+11 = 1.780 B0 = 0.593 T0 (T0 = 3 x B0; budget 5 runs x B; mean over trials 1.780 B0, max 1.780 B0)
+  cost vs targets: intermediate (B <= B0/2, T <= 4 T0) within; main (B <= B0/4, T <= 10 T0) outside
+VERDICT: FAIL (success below 0.99 at n = 256)
+targets (PASS, a measured grade and exact arithmetic or a circuit-specific bound are needed): intermediate not met, main not met
+candidate base/ekera_ctrl.py S=5 ATTEMPTS=1
+source scan: clean
+arithmetic model: approximate with flagged failures, coupling model (bad weight 0.00247 per addition from the declared estimate, summed over a run; flagged runs are bad runs, no rerun; runs without offset(), runs whose approximate additions read tables built from Q, hash runs: old heuristic garbage model); additions priced measured (lead_w16_cap.json; abort cap 816538 executed Toffoli charged (851685 emitted, 0 of 0 random-outcome lanes over it))
+    n trials  success      95% interval   runs    lg ops lg opsmax  s/trial  per-run shape
+  256   2000   0.2605   [0.2417, 0.2802]   6.00     18.77     18.98    0.022  bits 265+52 -> 20 add.
+      2338 runs returned garbage (approximate-arithmetic model, 12000 runs under the old heuristic model)
+cost at n = 256 (grade measured (lead_w16_cap.json; abort cap 816538 executed Toffoli charged (851685 emitted, 0 of 0 random-outcome lanes over it)): 1244 qubits, 8.165e+05 Toffoli per windowed addition, window 16):
+  largest run: 317 exponent bits, 21 windows, 20 additions + initial lookup (33017 Toffoli), 1.636e+07 Toffoli, 1244 qubits
+  B = 2.036e+10 = 0.3559 B0 (B0 = 5.7195e+10 = 1,457 x 39,255,168, Häner et al. body; 0.3510 of the rounded 5.8e10)
+  T = 1.221e+11 = 2.135 B0 = 0.712 T0 (T0 = 3 x B0; budget 6 runs x B; mean over trials 2.135 B0, max 2.135 B0)
+  cost vs targets: intermediate (B <= B0/2, T <= 4 T0) within; main (B <= B0/4, T <= 10 T0) outside
+VERDICT: FAIL (success below 0.99 at n = 256)
+targets (PASS, a measured grade and exact arithmetic or a circuit-specific bound are needed): intermediate not met, main not met
+candidate base/ekera_ctrl.py S=5 ATTEMPTS=1
+source scan: clean
+arithmetic model: exact; additions priced measured (lead_w16_cap.json; abort cap 816538 executed Toffoli charged (851685 emitted, 0 of 0 random-outcome lanes over it))
+    n trials  success      95% interval   runs    lg ops lg opsmax  s/trial  per-run shape
+  256   1000   0.9960   [0.9898, 0.9984]   6.00     18.77     18.97    0.024  bits 265+52 -> 20 add.
+cost at n = 256 (grade measured (lead_w16_cap.json; abort cap 816538 executed Toffoli charged (851685 emitted, 0 of 0 random-outcome lanes over it)): 1244 qubits, 8.165e+05 Toffoli per windowed addition, window 16):
+  largest run: 317 exponent bits, 21 windows, 20 additions + initial lookup (33017 Toffoli), 1.636e+07 Toffoli, 1244 qubits
+  B = 2.036e+10 = 0.3559 B0 (B0 = 5.7195e+10 = 1,457 x 39,255,168, Häner et al. body; 0.3510 of the rounded 5.8e10)
+  T = 1.221e+11 = 2.135 B0 = 0.712 T0 (T0 = 3 x B0; budget 6 runs x B; mean over trials 2.135 B0, max 2.135 B0)
+  cost vs targets: intermediate (B <= B0/2, T <= 4 T0) within; main (B <= B0/4, T <= 10 T0) outside
+VERDICT: FAIL (success below 0.99 at n = 256)
+targets (PASS, a measured grade and exact arithmetic or a circuit-specific bound are needed): intermediate not met, main not met
+candidate base/ekera_ctrl.py S=6 ATTEMPTS=1
+source scan: clean
+arithmetic model: approximate with flagged failures, coupling model (bad weight 0.00247 per addition from the declared estimate, summed over a run; flagged runs are bad runs, no rerun; runs without offset(), runs whose approximate additions read tables built from Q, hash runs: old heuristic garbage model); additions priced measured (lead_w16_cap.json; abort cap 816538 executed Toffoli charged (851685 emitted, 0 of 0 random-outcome lanes over it))
+    n trials  success      95% interval   runs    lg ops lg opsmax  s/trial  per-run shape
+  256   2000   0.2225   [0.2048, 0.2413]   7.00     19.56     19.74    0.033  bits 265+43 -> 19 add.
+      2654 runs returned garbage (approximate-arithmetic model, 14000 runs under the old heuristic model)
+cost at n = 256 (grade measured (lead_w16_cap.json; abort cap 816538 executed Toffoli charged (851685 emitted, 0 of 0 random-outcome lanes over it)): 1244 qubits, 8.165e+05 Toffoli per windowed addition, window 16):
+  largest run: 308 exponent bits, 20 windows, 19 additions + initial lookup (33017 Toffoli), 1.555e+07 Toffoli, 1244 qubits
+  B = 1.934e+10 = 0.3382 B0 (B0 = 5.7195e+10 = 1,457 x 39,255,168, Häner et al. body; 0.3335 of the rounded 5.8e10)
+  T = 1.354e+11 = 2.367 B0 = 0.789 T0 (T0 = 3 x B0; budget 7 runs x B; mean over trials 2.367 B0, max 2.367 B0)
+  cost vs targets: intermediate (B <= B0/2, T <= 4 T0) within; main (B <= B0/4, T <= 10 T0) outside
+VERDICT: FAIL (success below 0.99 at n = 256)
+targets (PASS, a measured grade and exact arithmetic or a circuit-specific bound are needed): intermediate not met, main not met
+candidate base/ekera_ctrl.py S=6 ATTEMPTS=1
+source scan: clean
+arithmetic model: exact; additions priced measured (lead_w16_cap.json; abort cap 816538 executed Toffoli charged (851685 emitted, 0 of 0 random-outcome lanes over it))
+    n trials  success      95% interval   runs    lg ops lg opsmax  s/trial  per-run shape
+  256   1000   0.9860   [0.9766, 0.9916]   7.00     19.57     19.74    0.018  bits 265+43 -> 19 add.
+cost at n = 256 (grade measured (lead_w16_cap.json; abort cap 816538 executed Toffoli charged (851685 emitted, 0 of 0 random-outcome lanes over it)): 1244 qubits, 8.165e+05 Toffoli per windowed addition, window 16):
+  largest run: 308 exponent bits, 20 windows, 19 additions + initial lookup (33017 Toffoli), 1.555e+07 Toffoli, 1244 qubits
+  B = 1.934e+10 = 0.3382 B0 (B0 = 5.7195e+10 = 1,457 x 39,255,168, Häner et al. body; 0.3335 of the rounded 5.8e10)
+  T = 1.354e+11 = 2.367 B0 = 0.789 T0 (T0 = 3 x B0; budget 7 runs x B; mean over trials 2.367 B0, max 2.367 B0)
+  cost vs targets: intermediate (B <= B0/2, T <= 4 T0) within; main (B <= B0/4, T <= 10 T0) outside
+VERDICT: FAIL (success below 0.99 at n = 256)
+targets (PASS, a measured grade and exact arithmetic or a circuit-specific bound are needed): intermediate not met, main not met
+candidate base/ekera_ctrl.py S=7 ATTEMPTS=1
+source scan: clean
+arithmetic model: approximate with flagged failures, coupling model (bad weight 0.00247 per addition from the declared estimate, summed over a run; flagged runs are bad runs, no rerun; runs without offset(), runs whose approximate additions read tables built from Q, hash runs: old heuristic garbage model); additions priced measured (lead_w16_cap.json; abort cap 816538 executed Toffoli charged (851685 emitted, 0 of 0 random-outcome lanes over it))
+    n trials  success      95% interval   runs    lg ops lg opsmax  s/trial  per-run shape
+  256   2000   0.1530   [0.1379, 0.1694]   9.00     20.90     21.05    0.039  bits 265+37 -> 19 add.
+      3287 runs returned garbage (approximate-arithmetic model, 18000 runs under the old heuristic model)
+cost at n = 256 (grade measured (lead_w16_cap.json; abort cap 816538 executed Toffoli charged (851685 emitted, 0 of 0 random-outcome lanes over it)): 1244 qubits, 8.165e+05 Toffoli per windowed addition, window 16):
+  largest run: 302 exponent bits, 20 windows, 19 additions + initial lookup (33017 Toffoli), 1.555e+07 Toffoli, 1244 qubits
+  B = 1.934e+10 = 0.3382 B0 (B0 = 5.7195e+10 = 1,457 x 39,255,168, Häner et al. body; 0.3335 of the rounded 5.8e10)
+  T = 1.741e+11 = 3.043 B0 = 1.014 T0 (T0 = 3 x B0; budget 9 runs x B; mean over trials 3.043 B0, max 3.043 B0)
+  cost vs targets: intermediate (B <= B0/2, T <= 4 T0) within; main (B <= B0/4, T <= 10 T0) outside
+VERDICT: FAIL (success below 0.99 at n = 256)
+targets (PASS, a measured grade and exact arithmetic or a circuit-specific bound are needed): intermediate not met, main not met
+candidate base/ekera_ctrl.py S=7 ATTEMPTS=1
+source scan: clean
+arithmetic model: exact; additions priced measured (lead_w16_cap.json; abort cap 816538 executed Toffoli charged (851685 emitted, 0 of 0 random-outcome lanes over it))
+    n trials  success      95% interval   runs    lg ops lg opsmax  s/trial  per-run shape
+  256   1000   0.9930   [0.9856, 0.9966]   9.00     20.90     21.06    0.068  bits 265+37 -> 19 add.
+cost at n = 256 (grade measured (lead_w16_cap.json; abort cap 816538 executed Toffoli charged (851685 emitted, 0 of 0 random-outcome lanes over it)): 1244 qubits, 8.165e+05 Toffoli per windowed addition, window 16):
+  largest run: 302 exponent bits, 20 windows, 19 additions + initial lookup (33017 Toffoli), 1.555e+07 Toffoli, 1244 qubits
+  B = 1.934e+10 = 0.3382 B0 (B0 = 5.7195e+10 = 1,457 x 39,255,168, Häner et al. body; 0.3335 of the rounded 5.8e10)
+  T = 1.741e+11 = 3.043 B0 = 1.014 T0 (T0 = 3 x B0; budget 9 runs x B; mean over trials 3.043 B0, max 3.043 B0)
+  cost vs targets: intermediate (B <= B0/2, T <= 4 T0) within; main (B <= B0/4, T <= 10 T0) outside
+VERDICT: FAIL (success below 0.99 at n = 256)
+targets (PASS, a measured grade and exact arithmetic or a circuit-specific bound are needed): intermediate not met, main not met
+candidate base/ekera_ctrl.py S=8 ATTEMPTS=1
+source scan: clean
+arithmetic model: approximate with flagged failures, coupling model (bad weight 0.00247 per addition from the declared estimate, summed over a run; flagged runs are bad runs, no rerun; runs without offset(), runs whose approximate additions read tables built from Q, hash runs: old heuristic garbage model); additions priced measured (lead_w16_cap.json; abort cap 816538 executed Toffoli charged (851685 emitted, 0 of 0 random-outcome lanes over it))
+    n trials  success      95% interval   runs    lg ops lg opsmax  s/trial  per-run shape
+  256   2000   0.1180   [0.1046, 0.1329]  11.00     21.98     22.13    0.089  bits 265+32 -> 18 add.
+      3804 runs returned garbage (approximate-arithmetic model, 22000 runs under the old heuristic model)
+cost at n = 256 (grade measured (lead_w16_cap.json; abort cap 816538 executed Toffoli charged (851685 emitted, 0 of 0 random-outcome lanes over it)): 1244 qubits, 8.165e+05 Toffoli per windowed addition, window 16):
+  largest run: 297 exponent bits, 19 windows, 18 additions + initial lookup (33017 Toffoli), 1.473e+07 Toffoli, 1244 qubits
+  B = 1.832e+10 = 0.3204 B0 (B0 = 5.7195e+10 = 1,457 x 39,255,168, Häner et al. body; 0.3159 of the rounded 5.8e10)
+  T = 2.016e+11 = 3.524 B0 = 1.175 T0 (T0 = 3 x B0; budget 11 runs x B; mean over trials 3.524 B0, max 3.524 B0)
+  cost vs targets: intermediate (B <= B0/2, T <= 4 T0) within; main (B <= B0/4, T <= 10 T0) outside
+VERDICT: FAIL (success below 0.99 at n = 256)
+targets (PASS, a measured grade and exact arithmetic or a circuit-specific bound are needed): intermediate not met, main not met
+candidate base/ekera_ctrl.py S=8 ATTEMPTS=1
+source scan: clean
+arithmetic model: exact; additions priced measured (lead_w16_cap.json; abort cap 816538 executed Toffoli charged (851685 emitted, 0 of 0 random-outcome lanes over it))
+    n trials  success      95% interval   runs    lg ops lg opsmax  s/trial  per-run shape
+  256   1000   0.9900   [0.9817, 0.9946]  11.00     21.98     22.13    0.105  bits 265+32 -> 18 add.
+cost at n = 256 (grade measured (lead_w16_cap.json; abort cap 816538 executed Toffoli charged (851685 emitted, 0 of 0 random-outcome lanes over it)): 1244 qubits, 8.165e+05 Toffoli per windowed addition, window 16):
+  largest run: 297 exponent bits, 19 windows, 18 additions + initial lookup (33017 Toffoli), 1.473e+07 Toffoli, 1244 qubits
+  B = 1.832e+10 = 0.3204 B0 (B0 = 5.7195e+10 = 1,457 x 39,255,168, Häner et al. body; 0.3159 of the rounded 5.8e10)
+  T = 2.016e+11 = 3.524 B0 = 1.175 T0 (T0 = 3 x B0; budget 11 runs x B; mean over trials 3.524 B0, max 3.524 B0)
+  cost vs targets: intermediate (B <= B0/2, T <= 4 T0) within; main (B <= B0/4, T <= 10 T0) outside
+VERDICT: FAIL (success below 0.99 at n = 256)
+targets (PASS, a measured grade and exact arithmetic or a circuit-specific bound are needed): intermediate not met, main not met
+candidate base/ekera_ctrl.py S=10 ATTEMPTS=1
+source scan: clean
+arithmetic model: approximate with flagged failures, coupling model (bad weight 0.00247 per addition from the declared estimate, summed over a run; flagged runs are bad runs, no rerun; runs without offset(), runs whose approximate additions read tables built from Q, hash runs: old heuristic garbage model); additions priced measured (lead_w16_cap.json; abort cap 816538 executed Toffoli charged (851685 emitted, 0 of 0 random-outcome lanes over it))
+    n trials  success      95% interval   runs    lg ops lg opsmax  s/trial  per-run shape
+  256   2000   0.0550   [0.0458, 0.0659]  15.00     23.64     23.77    0.230  bits 266+26 -> 18 add.
+      5199 runs returned garbage (approximate-arithmetic model, 30000 runs under the old heuristic model)
+cost at n = 256 (grade measured (lead_w16_cap.json; abort cap 816538 executed Toffoli charged (851685 emitted, 0 of 0 random-outcome lanes over it)): 1244 qubits, 8.165e+05 Toffoli per windowed addition, window 16):
+  largest run: 292 exponent bits, 19 windows, 18 additions + initial lookup (33017 Toffoli), 1.473e+07 Toffoli, 1244 qubits
+  B = 1.832e+10 = 0.3204 B0 (B0 = 5.7195e+10 = 1,457 x 39,255,168, Häner et al. body; 0.3159 of the rounded 5.8e10)
+  T = 2.749e+11 = 4.806 B0 = 1.602 T0 (T0 = 3 x B0; budget 15 runs x B; mean over trials 4.806 B0, max 4.806 B0)
+  cost vs targets: intermediate (B <= B0/2, T <= 4 T0) within; main (B <= B0/4, T <= 10 T0) outside
+VERDICT: FAIL (success below 0.99 at n = 256)
+targets (PASS, a measured grade and exact arithmetic or a circuit-specific bound are needed): intermediate not met, main not met
+candidate base/ekera_ctrl.py S=10 ATTEMPTS=1
+source scan: clean
+arithmetic model: exact; additions priced measured (lead_w16_cap.json; abort cap 816538 executed Toffoli charged (851685 emitted, 0 of 0 random-outcome lanes over it))
+    n trials  success      95% interval   runs    lg ops lg opsmax  s/trial  per-run shape
+  256   1000   0.9940   [0.9870, 0.9972]  15.00     23.64     23.77    0.184  bits 266+26 -> 18 add.
+cost at n = 256 (grade measured (lead_w16_cap.json; abort cap 816538 executed Toffoli charged (851685 emitted, 0 of 0 random-outcome lanes over it)): 1244 qubits, 8.165e+05 Toffoli per windowed addition, window 16):
+  largest run: 292 exponent bits, 19 windows, 18 additions + initial lookup (33017 Toffoli), 1.473e+07 Toffoli, 1244 qubits
+  B = 1.832e+10 = 0.3204 B0 (B0 = 5.7195e+10 = 1,457 x 39,255,168, Häner et al. body; 0.3159 of the rounded 5.8e10)
+  T = 2.749e+11 = 4.806 B0 = 1.602 T0 (T0 = 3 x B0; budget 15 runs x B; mean over trials 4.806 B0, max 4.806 B0)
+  cost vs targets: intermediate (B <= B0/2, T <= 4 T0) within; main (B <= B0/4, T <= 10 T0) outside
+VERDICT: FAIL (success below 0.99 at n = 256)
+targets (PASS, a measured grade and exact arithmetic or a circuit-specific bound are needed): intermediate not met, main not met

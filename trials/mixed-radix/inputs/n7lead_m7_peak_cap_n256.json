@@ -1,0 +1,53 @@
+{
+ "circuit": "o1/n7lead.py",
+ "params": [
+  "KIND=m7_window_add",
+  "W=7",
+  "HOLD=peak"
+ ],
+ "kind": "m7_window_add",
+ "exact": false,
+ "sizes": [
+  {
+   "n": 256,
+   "verdict": "PASS",
+   "mode": "random (1 x 1024 inputs)",
+   "lanes": 1024,
+   "random_failures": 1,
+   "random_flagged": 1,
+   "exceptional_flagged": 0,
+   "first_lookup": {
+    "toffoli": 262393,
+    "peak_qubits": 782
+   },
+   "first_lookup_offset": {
+    "toffoli": 524286,
+    "peak_qubits": 549
+   },
+   "exceptional_failures": 21,
+   "exceptional_lanes": 84,
+   "counts": {
+    "toffoli": 847736,
+    "cnot": 28693123,
+    "x": 1070571,
+    "measurements": 880365,
+    "peak_qubits": 1245,
+    "live_at_end": 548,
+    "toffoli_expected_executed_stream": 723717.9150390625,
+    "toffoli_executed_mean": 810303.9150390625,
+    "toffoli_executed_min": 808834,
+    "toffoli_executed_max": 812277,
+    "outcome_lanes": 1024
+   },
+   "abort_cap": 812589,
+   "aborted": 0,
+   "window": 7,
+   "declared_failure": 0.00275
+  }
+ ],
+ "extra_toffoli": 630,
+ "extra_toffoli_src": "o1 norm-7 correction-phase digit register (o1/n7digit.py, 2 - w): harness/vb.py o1/s5/n7digit_check.py --n 7 -p BAR=True -p MODE=identity 902 - conversion 272 (o1/s5/n7conv_check.py); o1/results/s5/n7digit_w7_identity.txt, h1/n7/n7conv_digit_w7.txt",
+ "stream_toffoli": 761147,
+ "stream_cap": 726000,
+ "stream_raw_sha256": "fb14f5d55f8abead1f6a2a729050e78f0b0a3f4f74e53a45efd6ac9a600830f8"
+}

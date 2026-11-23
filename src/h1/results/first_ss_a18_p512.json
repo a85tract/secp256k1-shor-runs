@@ -1,0 +1,39 @@
+{
+ "circuit": "o1/first_ss.py",
+ "params": [
+  "P=512"
+ ],
+ "kind": null,
+ "exact": true,
+ "sizes": [
+  {
+   "n": 18,
+   "verdict": "PASS",
+   "mode": "random (1 x 64 inputs)",
+   "lanes": 192,
+   "random_failures": 0,
+   "random_flagged": 0,
+   "exceptional_flagged": 0,
+   "first_lookup": null,
+   "first_lookup_offset": null,
+   "exceptional_failures": 0,
+   "exceptional_lanes": 12,
+   "counts": {
+    "toffoli": 132380,
+    "cnot": 67228161,
+    "x": 263752,
+    "measurements": 132656,
+    "peak_qubits": 1058,
+    "live_at_end": 530,
+    "flag_used": false,
+    "toffoli_executed_mean": 132380.0,
+    "toffoli_executed_max": 132380,
+    "outcome_lanes": 64
+   },
+   "abort_cap": null,
+   "aborted": 0,
+   "window": null,
+   "declared_failure": null
+  }
+ ]
+}

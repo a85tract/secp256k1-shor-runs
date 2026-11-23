@@ -1,0 +1,13 @@
+candidate base/u1_shor.py ATTEMPTS=1
+source scan: clean
+arithmetic model: approximate with flagged failures, coupling model (bad weight 0.00247 per addition from the declared estimate, summed over a run; flagged runs are bad runs, no rerun; runs without offset(), runs whose approximate additions read tables built from Q, hash runs: old heuristic garbage model); additions priced measured (lead_w16_cap.json; abort cap 816538 executed Toffoli charged (851685 emitted, 0 of 0 random-outcome lanes over it))
+    n trials  success      95% interval   runs    lg ops lg opsmax  s/trial  per-run shape
+  256  20000   0.7225   [0.7162, 0.7286]   1.00     34.67     36.48    0.001  bits 256+208 -> 28 add.
+      5515 runs returned garbage (approximate-arithmetic model, 20000 runs under the old heuristic model)
+cost at n = 256 (grade measured (lead_w16_cap.json; abort cap 816538 executed Toffoli charged (851685 emitted, 0 of 0 random-outcome lanes over it)): 1244 qubits, 8.165e+05 Toffoli per windowed addition, window 16):
+  largest run: 464 exponent bits, 29 windows, 28 additions + initial lookup (33017 Toffoli), 2.29e+07 Toffoli, 1244 qubits
+  B = 2.848e+10 = 0.4980 B0 (B0 = 5.7195e+10 = 1,457 x 39,255,168, Häner et al. body; 0.4911 of the rounded 5.8e10)
+  T = 2.848e+10 = 0.498 B0 = 0.166 T0 (T0 = 3 x B0; budget 1 runs x B; mean over trials 0.498 B0, max 0.498 B0)
+  cost vs targets: intermediate (B <= B0/2, T <= 4 T0) within; main (B <= B0/4, T <= 10 T0) outside
+VERDICT: FAIL (success below 0.99 at n = 256)
+targets (PASS, a measured grade and exact arithmetic or a circuit-specific bound are needed): intermediate not met, main not met

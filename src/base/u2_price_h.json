@@ -1,0 +1,135 @@
+{
+ "candidate": "base/u2_price.py",
+ "params": [
+  "VARIANT='h'"
+ ],
+ "approx": false,
+ "scan": [],
+ "sizes": [
+  {
+   "n": 256,
+   "trials": 1,
+   "ok": 0,
+   "interval": [
+    0.0,
+    0.7934567085261071
+   ],
+   "exact_lower": null,
+   "secp_trials": 1,
+   "secp_ok": 0,
+   "mean_runs": 1.0,
+   "max_runs": 1,
+   "mean_ops": 0.0,
+   "max_ops": 0,
+   "errors": {},
+   "secs": 0.454121275,
+   "unsimulated": 0,
+   "garbage_runs": 0,
+   "heuristic_runs": 0,
+   "capped_attempts": 0,
+   "lemma_g_runs": 0,
+   "max_attempt": 0,
+   "shapes": [
+    [
+     [
+      256,
+      208
+     ],
+     27
+    ]
+   ]
+  }
+ ],
+ "cost256": {
+  "B": 27601256186.0,
+  "B_over_B0": 0.48258348566248005,
+  "B_over_B0_rounded": 0.4758837273448276,
+  "T": 27601256186.0,
+  "T_over_T0": 0.16086116188749336,
+  "budget_runs": 1,
+  "largest_run": {
+   "exp_bits": 464,
+   "windows": 28,
+   "additions": 27,
+   "add_ws": [
+    9,
+    9,
+    9,
+    9,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    9,
+    9,
+    9,
+    9,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8
+   ],
+   "add_kinds": [
+    "w9",
+    "w9",
+    "w9",
+    "w9",
+    "w8",
+    "w8",
+    "w8",
+    "w8",
+    "w8",
+    "w8",
+    "w8",
+    "w8",
+    "w8",
+    "w8",
+    "w8",
+    "w9",
+    "w9",
+    "w9",
+    "w9",
+    "w8",
+    "w8",
+    "w8",
+    "w8",
+    "w8",
+    "w8",
+    "w8",
+    "w8"
+   ],
+   "term_classical": 0,
+   "first_lookup": 33680,
+   "first_bits": 16,
+   "qubits": 1246,
+   "toffoli": 22151891.0,
+   "cost": 27601256186.0,
+   "grade": "19 x w8: measured (hexlead_w8_peak_cap_n256.json; abort cap 779515 executed Toffoli charged (814662 emitted, 0 of 1024 random-outcome lanes over it); + 486 declared Toffoli outside the checked circuit (o1 correction-phase digit register (o1/hexdigit_check.py identity - conv, o2/results5/digit_reg.txt))); 8 x w9: measured (hexlead_w9_peak_cap_n256.json; abort cap 911737 executed Toffoli charged (946884 emitted, 0 of 1024 random-outcome lanes over it); + 532 declared Toffoli outside the checked circuit (o1 correction-phase digit register (o1/hexdigit_check.py identity - conv, o2/results5/digit_reg.txt))); first lookup 16 bits: measured (first_ss_a16_p512.json); counted sine-state preparation",
+   "q_tables": true,
+   "fail_weight": 0.0776640625,
+   "kinds": [
+    "w8",
+    "w9"
+   ],
+   "table_entries": 622628,
+   "measured": true
+  },
+  "targets": {
+   "intermediate": true,
+   "main": false
+  }
+ },
+ "flags": [],
+ "verdict": "FAIL"
+}

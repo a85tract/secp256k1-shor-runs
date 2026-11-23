@@ -1,0 +1,38 @@
+{
+ "circuit": "o2/port/windowed_lead.py",
+ "params": [],
+ "kind": "signed_windowed_point_add",
+ "exact": false,
+ "sizes": [
+  {
+   "n": 256,
+   "verdict": "PASS",
+   "mode": "random (2 x 2048 inputs)",
+   "lanes": 4096,
+   "random_failures": 5,
+   "random_flagged": 2,
+   "exceptional_flagged": 14,
+   "first_lookup": {
+    "toffoli": 33017,
+    "peak_qubits": 779
+   },
+   "first_lookup_offset": {
+    "toffoli": 65534,
+    "peak_qubits": 543
+   },
+   "exceptional_failures": 24,
+   "exceptional_lanes": 138,
+   "counts": {
+    "toffoli": 851685,
+    "cnot": 30104503,
+    "x": 1084809,
+    "measurements": 885270,
+    "peak_qubits": 1244,
+    "live_at_end": 547,
+    "toffoli_expected_executed_stream": 723701.107421875
+   },
+   "window": 16,
+   "declared_failure": 0.00275
+  }
+ ]
+}
